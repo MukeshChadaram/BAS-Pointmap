@@ -1,0 +1,102 @@
+# =============================================================================
+# equipment_templates.yaml: equipment types and deployment-readiness rules
+# =============================================================================
+# For each equipment type:
+#
+#   aliases           prefixes found in vendor names (first one = canonical prefix)
+#                     "VMA-203" (Metasys) and "vav2-03" both become type vav
+#   haystack / brick  equipment tags and class (verified against official sources)
+#   subject_defaults  context for points that name a subject but leave a gap,
+#                     e.g. a bare "fan" on an RTU is the supply fan
+#   defaults          context for points that name no quantity at all,
+#                     e.g. "SS" on an exhaust fan starts that fan
+#   required          points an optimisation platform cannot run this equipment
+#                     without. "A|B" = either satisfies it. Globs allowed.
+#   recommended       points that improve control but don't block deployment
+#
+# The required/recommended lists are an engineering judgement, not a standard.
+# They are the first thing to adjust for a specific platform's algorithms.
+# =============================================================================
+version: 1
+
+equipment:
+  rtu:
+    label: rooftop unit
+    aliases: [RTU]
+    haystack: [equip, ahu, rtu]        # Haystack 4: rtu is a subtype of ahu
+    brick: Rooftop_Unit
+    subject_defaults:
+      fan: {position: discharge}
+    required: [DA-T, SF-C, SF-S, "ZN-T|RA-T"]
+    recommended: [OA-T, RA-CO2, HTG-STG-C, CLG-STG-C, OA-DMPR-C]
+
+  ahu:
+    label: air handling unit
+    aliases: [AHU]
+    haystack: [equip, ahu]
+    brick: Air_Handling_Unit
+    subject_defaults:
+      fan: {position: discharge}
+    required: [DA-T, SF-C, SF-S, DA-P]
+    recommended: [MA-T, RA-T, DA-T-SP, DA-P-SP, OA-DMPR-C, OA-T]
+
+  vav:
+    label: VAV box
+    aliases: [VAV, VMA, VAVB]
+    haystack: [equip, vav]
+    brick: Variable_Air_Volume_Box
+    required: [ZN-T, "ZN-T-SP|ZN-T-CLG-SP", DMPR-C, AIRFLOW]
+    recommended: [AIRFLOW-SP, DA-T, RHT-VLV-C, ZN-T-HTG-SP]
+
+  fcu:
+    label: fan coil unit
+    aliases: [FCU]
+    haystack: [equip, fcu]
+    brick: Fan_Coil_Unit
+    subject_defaults:
+      fan: {position: discharge}
+    required: [ZN-T, SF-C]
+    recommended: [SF-S, DA-T, HTG-VLV-C, ZN-T-SP]
+
+  exhaust_fan:
+    label: exhaust fan
+    aliases: [EF, EXF]
+    haystack: [equip, exhaust, fan, motor]   # Haystack 4 models fans as "fan motor equip"
+    brick: Exhaust_Fan
+    defaults: {subject: fan, position: exhaust}
+    required: [EF-C]
+    recommended: [EF-S]
+
+  unit_heater:
+    label: unit heater
+    aliases: [UH]
+    haystack: [equip, heatingOnly, fanPowered]   # no dedicated Haystack equip type
+    brick: Space_Heater                          # Brick 1.3 has no Unit_Heater class
+    subject_defaults:
+      fan: {position: discharge}
+    required: [ZN-T, HTG-STG-C]
+    recommended: [SF-C, SF-S, ZN-T-SP]
+
+  vestibule_heater:
+    label: vestibule heater
+    aliases: [VH, VEST]
+    haystack: [equip, heatingOnly]
+    brick: Space_Heater
+    required: [ZN-T]
+    recommended: [ZN-T-SP]
+
+  baseboard:
+    label: baseboard heater
+    aliases: [BB, EBB]
+    haystack: [equip, radiator]          # Haystack 4: radiator is a radiantEquip
+    brick: Baseboard_Radiator
+    required: [ZN-T]
+    recommended: [ZN-T-SP, OCC-S]
+
+  radiant_heater:
+    label: radiant tube heater
+    aliases: [RTH, IRH]
+    haystack: [equip, radiantEquip]
+    brick: Space_Heater
+    required: [ZN-T]
+    recommended: [OCC-S]

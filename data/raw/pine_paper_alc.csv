@@ -1,0 +1,62 @@
+Point Path,Display Name,Object Type,Instance,Units,Device
+#pine_paper/rtu_1/da_temp,Discharge Air Temp,Analog Input,1,°C,1001
+#pine_paper/rtu_1/ra_temp,Return Air Temp,Analog Input,2,°C,1001
+#pine_paper/rtu_1/ma_temp,Mixed Air Temp,Analog Input,3,°C,1001
+#pine_paper/rtu_1/zone_temp,Zone Temp,Analog Input,4,°C,1001
+#pine_paper/rtu_1/zone_temp_stpt,Zone Temp Setpoint,Analog Value,1,°C,1001
+#pine_paper/rtu_1/sf_ss,Supply Fan Start/Stop,Binary Output,1,,1001
+#pine_paper/rtu_1/sf_status,Supply Fan Status,Analog Input,5,A,1001
+#pine_paper/rtu_1/htg_stg_1,Heating Stage 1,Binary Output,2,,1001
+#pine_paper/rtu_1/htg_stg_2,Heating Stage 2,Binary Output,3,,1001
+#pine_paper/rtu_1/clg_stg_1,Cooling Stage 1,Binary Output,4,,1001
+#pine_paper/rtu_1/clg_stg_2,Cooling Stage 2,Binary Output,5,,1001
+#pine_paper/rtu_1/oa_dmpr_pos,Outside Air Damper,Analog Output,1,%,1001
+#pine_paper/rtu_1/ra_co2,Return Air CO2,Analog Input,6,ppm,1001
+#pine_paper/rtu_1/occ_mode,Occupancy Mode,Binary Value,2,,1001
+#pine_paper/rtu_2/da_temp,Discharge Air Temp,Analog Input,1,°C,1002
+#pine_paper/rtu_2/ra_temp,Return Air Temp,Analog Input,2,°C,1002
+#pine_paper/rtu_2/ma_temp,Mixed Air Temp,Analog Input,3,°C,1002
+#pine_paper/rtu_2/zone_temp,Zone Temp,Analog Input,4,°C,1002
+#pine_paper/rtu_2/zone_temp_stpt,Zone Temp Setpoint,Analog Value,1,°C,1002
+#pine_paper/rtu_2/sf_ss,Supply Fan Start/Stop,Binary Output,1,,1002
+#pine_paper/rtu_2/sf_status,Supply Fan Status,Binary Input,1,,1002
+#pine_paper/rtu_2/htg_stg_1,Heating Stage 1,Binary Output,2,,1002
+#pine_paper/rtu_2/htg_stg_2,Heating Stage 2,Binary Output,3,,1002
+#pine_paper/rtu_2/clg_stg_1,Cooling Stage 1,Binary Output,4,,1002
+#pine_paper/rtu_2/clg_stg_2,Cooling Stage 2,Binary Output,5,,1002
+#pine_paper/rtu_2/oa_dmpr_pos,Outside Air Damper,Analog Output,1,%,1002
+#pine_paper/rtu_2/ra_co2,Return Air CO2,Analog Input,6,ppm,1002
+#pine_paper/rtu_2/occ_mode,Occupancy Mode,Binary Value,2,,1002
+#pine_paper/rtu_2/filter_alarm,Dirty Filter,Binary Input,2,,1002
+#pine_paper/rtu_2/da_temp_stpt,Discharge Air Temp Setpoint,Analog Value,3,°C,1002
+#pine_paper/rtu_2/sat_test,SAT Test,Analog Value,9,°C,1002
+#pine_paper/rtu_3/da_temp,Discharge Air Temp,Analog Input,1,°C,1003
+#pine_paper/rtu_3/ra_temp,Mixed Air Temp,Analog Input,2,°C,1003
+#pine_paper/rtu_3/ma_temp,Mixed Air Temp,Analog Input,3,°C,1003
+#pine_paper/rtu_3/zone_temp,Zone Temp,Analog Input,4,,1003
+#pine_paper/rtu_3/zone_temp_stpt,Zone Temp Setpoint,Analog Value,1,°C,1003
+#pine_paper/rtu_3/sf_ss,Supply Fan Start/Stop,Binary Output,1,,1003
+#pine_paper/rtu_3/sf_status,Supply Fan Status,Binary Input,1,,1003
+#pine_paper/rtu_3/htg_stg_1,Heating Stage 1,Binary Output,2,,1003
+#pine_paper/rtu_3/htg_stg_2,Heating Stage 2,Binary Output,3,,1003
+#pine_paper/rtu_3/clg_stg_1,Cooling Stage 1,Binary Output,4,,1003
+#pine_paper/rtu_3/clg_stg_2,Cooling Stage 2,Binary Output,5,,1003
+#pine_paper/rtu_3/oa_dmpr_pos,Outside Air Damper,Analog Output,1,%,1003
+#pine_paper/rtu_3/ra_co2,Return Air CO2,Analog Input,6,ppm,1003
+#pine_paper/rtu_3/occ_mode,Occupancy Mode,Binary Value,2,,1003
+#pine_paper/rtu_3/filter_status,Filter Status,Binary Input,2,,1003
+#pine_paper/uh_1/zone_temp,Zone Temp,Analog Input,1,°C,1010
+#pine_paper/uh_1/zone_temp_stpt,Zone Temp Setpoint,Analog Value,1,°C,1010
+#pine_paper/uh_1/fan_ss,Fan Start/Stop,Binary Output,1,,1010
+#pine_paper/uh_1/heat_1,Heat Stage 1,Binary Output,2,,1010
+#pine_paper/uh_2/zone_temp,Zone Temp,Analog Input,1,°C,1011
+#pine_paper/uh_2/zone_temp_stpt,Zone Temp Setpoint,Analog Value,1,°C,1011
+#pine_paper/uh_2/fan_ss,Fan Start/Stop,Binary Output,1,,1011
+#pine_paper/uh_2/heat_1,Heat Stage 1,Binary Output,2,,1011
+#pine_paper/uh_2/fan_status,Fan Status,Binary Input,1,,1011
+#pine_paper/ef_1/ef_ss,Exhaust Fan Start/Stop,Binary Output,1,,1012
+#pine_paper/ef_1/ef_status,Exhaust Fan Status,Binary Input,1,,1012
+#pine_paper/site/oa_temp,Outside Air Temp,Analog Input,1,°C,1000
+#pine_paper/site/oa_humidity,Outside Air Humidity,Analog Input,2,%RH,1000
+#pine_paper/site/dock_door_1,Dock Door 1 Contact,Binary Input,1,,1000
+#pine_paper/site/lighting_zone_2,Lighting Zone 2,Binary Output,1,,1000

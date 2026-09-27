@@ -1,0 +1,2 @@
+[console_scripts]
+pointmap = pointmap.cli:main

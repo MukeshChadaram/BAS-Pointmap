@@ -1,0 +1,57 @@
+point_name,device_instance,expected_equip,expected_point,expected_role,expected_canonical_name,expected_outcome,note
+Rtu #1 Disch Air Tmp,5001,RTU-01,DA-T,DA-T,RTU-01.DA-T,map,
+RTU1-DAT,5001,RTU-01,DA-T,DA-T,RTU-01.DA-T,map,same sensor exposed twice by two front-ends; a person must pick one
+RTU1-RAT,5001,RTU-01,RA-T,RA-T,RTU-01.RA-T,map,
+RTU1 ZN TEMPATURE,5001,RTU-01,ZN-T,ZN-T,RTU-01.ZN-T,map,typo in the name
+RTU1 SF S/S,5001,RTU-01,SF-C,SF-C,RTU-01.SF-C,map,
+RTU1 SF STATUS,5001,RTU-01,SF-S,SF-S,RTU-01.SF-S,map,
+RTU1 HEAT 1,5001,RTU-01,HTG-STG1-C,HTG-STG-C,RTU-01.HTG-STG1-C,map,
+RTU1 COOL 1,5001,RTU-01,CLG-STG1-C,CLG-STG-C,RTU-01.CLG-STG1-C,map,
+RTU1 COOL 2,5001,RTU-01,CLG-STG2-C,CLG-STG-C,RTU-01.CLG-STG2-C,map,object type missing from export
+RTU1 DAT HI LIMIT,5001,,NONE,,,refuse,"high-limit parameter, not the sensor"
+RTU1 DAT ALM,5001,,NONE,,,refuse,alarm object
+SPARE_AI_3,5001,,NONE,,,refuse,spare I/O
+AHU1 MAT,5010,AHU-01,MA-T,MA-T,AHU-01.MA-T,map,exact duplicate row from a merged export
+AHU1 MAT,5010,AHU-01,MA-T,MA-T,AHU-01.MA-T,map,exact duplicate row from a merged export
+AHU1 SAT,5010,AHU-01,DA-T,DA-T,AHU-01.DA-T,map,
+AHU1 RAT,5010,AHU-01,RA-T,RA-T,AHU-01.RA-T,map,
+AHU1 SUPPLY FAN CMD,5010,AHU-01,SF-C,SF-C,AHU-01.SF-C,map,
+AHU1 SUPPLY FAN STATUS,5010,AHU-01,SF-S,SF-S,AHU-01.SF-S,map,
+AHU1 DUCT STATIC,5010,AHU-01,DA-P,DA-P,AHU-01.DA-P,map,
+AHU1 OA DAMPER,5010,AHU-01,OA-DMPR-C,OA-DMPR-C,AHU-01.OA-DMPR-C,map,
+AHU1 FILTER STATUS,5010,AHU-01,FLTR-S,FLTR-S,AHU-01.FLTR-S,map,
+AHU1 PID KP,5010,,NONE,,,refuse,loop tuning parameter
+vav2-01_ZN_TEMP_DegF,5021,VAV-2-01,ZN-T,ZN-T,VAV-2-01.ZN-T,map,unit only in the name
+vav2-01_ZN_SETPT,5021,VAV-2-01,ZN-T-SP,ZN-T-SP,VAV-2-01.ZN-T-SP,map,
+vav2-01_DMPR_CMD,5021,VAV-2-01,DMPR-C,DMPR-C,VAV-2-01.DMPR-C,map,
+vav2-01_AIRFLOW,5021,VAV-2-01,AIRFLOW,AIRFLOW,VAV-2-01.AIRFLOW,map,
+vav2-02_ZN_TEMP_DegF,5022,VAV-2-02,ZN-T,ZN-T,VAV-2-02.ZN-T,map,unit only in the name
+vav2-02_ZN_SETPT,5022,VAV-2-02,ZN-T-SP,ZN-T-SP,VAV-2-02.ZN-T-SP,map,
+vav2-02_DMPR_CMD,5022,VAV-2-02,DMPR-C,DMPR-C,VAV-2-02.DMPR-C,map,
+vav2-02_AIRFLOW,5022,VAV-2-02,AIRFLOW,AIRFLOW,VAV-2-02.AIRFLOW,map,
+vav2-02_RHT_VLV,5022,VAV-2-02,RHT-VLV-C,RHT-VLV-C,VAV-2-02.RHT-VLV-C,map,
+vav2-03_ZN_TEMP_DegF,5023,VAV-2-03,ZN-T,ZN-T,VAV-2-03.ZN-T,map,unit only in the name
+vav2-03_ZN_SETPT,5023,VAV-2-03,ZN-T-SP,ZN-T-SP,VAV-2-03.ZN-T-SP,map,
+vav2-03_DMPR_CMD,5023,VAV-2-03,DMPR-C,DMPR-C,VAV-2-03.DMPR-C,map,
+vav2-03_AIRFLOW,5023,VAV-2-03,AIRFLOW,AIRFLOW,VAV-2-03.AIRFLOW,map,
+vav2-04_ZN_TEMP_DegF,5024,VAV-2-04,ZN-T,ZN-T,VAV-2-04.ZN-T,map,unit only in the name
+vav2-04_ZN_SETPT,5024,VAV-2-04,ZN-T-SP,ZN-T-SP,VAV-2-04.ZN-T-SP,map,
+vav2-04_DMPR_CMD,5024,VAV-2-04,DMPR-C,DMPR-C,VAV-2-04.DMPR-C,map,
+vav2-04_AIRFLOW,5024,VAV-2-04,AIRFLOW,AIRFLOW,VAV-2-04.AIRFLOW,map,object type and units missing
+EF-2 S/S,5030,EF-02,EF-C,EF-C,EF-02.EF-C,map,
+EF-2 STATUS,5030,EF-02,EF-S,EF-S,EF-02.EF-S,map,
+UH-3 FAN,5040,UH-03,SF-C,SF-C,UH-03.SF-C,map,
+UH-3 RM TEMP,5040,UH-03,ZN-T,ZN-T,UH-03.ZN-T,map,
+UH-3 HEAT,5040,UH-03,HTG-STG1-C,HTG-STG-C,UH-03.HTG-STG1-C,map,"single-stage heat, stage not written"
+BB-1 RM TEMP,5050,BB-01,ZN-T,ZN-T,BB-01.ZN-T,map,
+BB-1 RM TEMP SP,5050,BB-01,ZN-T-SP,ZN-T-SP,BB-01.ZN-T-SP,map,
+VH-1 VESTIBULE TEMP,5060,VH-01,ZN-T,ZN-T,VH-01.ZN-T,map,
+FCU-1 ZN-T,5070,FCU-01,ZN-T,ZN-T,FCU-01.ZN-T,map,
+FCU-1 FAN SS,5070,FCU-01,SF-C,SF-C,FCU-01.SF-C,map,
+FCU-1 HW VLV,5070,FCU-01,HTG-VLV-C,HTG-VLV-C,FCU-01.HTG-VLV-C,map,hot water valve on a heating FCU
+OAT,5000,,OA-T,OA-T,LEGACY-MIX.OA-T,map,site-level
+OA HUMIDITY,5000,,OA-RH,OA-RH,LEGACY-MIX.OA-RH,map,site-level
+ROOM 214 TEMP,5000,,NONE,,,refuse,orphan: no equipment reference
+LIGHTING RELAY 4,5000,,NONE,,,refuse,out of scope: lighting
+MAIN KW,5000,,NONE,,,refuse,out of scope: electrical metering
+DHW TEMP,5000,,NONE,,,refuse,out of scope: domestic hot water

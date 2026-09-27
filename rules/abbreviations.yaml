@@ -1,0 +1,282 @@
+# =============================================================================
+# abbreviations.yaml: how raw name fragments map to meaning
+# =============================================================================
+# Every token in a point name is upper-cased and looked up here. A token
+# assigns values to one or more DIMENSIONS:
+#
+#   position : discharge | mixed | return | outside | zone | exhaust
+#   medium   : air | water
+#   quantity : temp | pressure | flow | co2 | humidity | current | speed
+#   function : sensor | sp | cmd | status
+#   subject  : fan | damper | valve | stage | occupancy | filter
+#   mode     : heating | cooling
+#
+# A point role in point_roles.yaml is recognised when the dimensions pulled
+# out of a name satisfy that role's requirements.
+#
+# AMBIGUOUS tokens list alternatives. The classifier tries every alternative
+# and lets the BACnet object type and the units decide. The alternative it
+# chose is always written to the evidence column; nothing is picked silently.
+#
+# To teach the tool a new vendor abbreviation, add one line here.
+# No code changes needed. Rules are validated at load time, so a typo fails
+# loudly before any point is processed.
+# =============================================================================
+version: 1
+
+tokens:
+  # --- position ---------------------------------------------------------------
+  # Haystack calls air leaving a unit "discharge". Supply and discharge are the
+  # same air stream on an RTU/AHU, so SA and DA map to the same position.
+  DA:        {position: discharge, medium: air}
+  SA:        {position: discharge, medium: air}
+  DISCH:     {position: discharge}
+  DISCHARGE: {position: discharge}
+  DIS:       {position: discharge}
+  SUPPLY:    {position: discharge}
+  SUP:       {position: discharge}
+  SUPP:      {position: discharge}
+  SPLY:      {position: discharge}
+  MA:        {position: mixed, medium: air}
+  MIXED:     {position: mixed}
+  MIX:       {position: mixed}
+  MXD:       {position: mixed}
+  RA:        {position: return, medium: air}
+  RETURN:    {position: return}
+  RET:       {position: return}
+  RTN:       {position: return}
+  OA:        {position: outside, medium: air}
+  OUTSIDE:   {position: outside}
+  OUTDOOR:   {position: outside}
+  OSA:       {position: outside, medium: air}
+  ZN:        {position: zone}
+  ZONE:      {position: zone}
+  RM:        {position: zone}
+  ROOM:      {position: zone}
+  SPACE:     {position: zone}
+  SPC:       {position: zone}
+  EA:        {position: exhaust, medium: air}
+  EXHAUST:   {position: exhaust}
+  EXH:       {position: exhaust}
+
+  # --- medium -----------------------------------------------------------------
+  AIR:       {medium: air}
+
+  # --- quantity ---------------------------------------------------------------
+  T:           {quantity: temp}
+  TEMP:        {quantity: temp}
+  TMP:         {quantity: temp}
+  TEMPERATURE: {quantity: temp}
+  TEMPR:       {quantity: temp}
+  TMPR:        {quantity: temp}
+  P:           {quantity: pressure}
+  PRESS:       {quantity: pressure}
+  PRESSURE:    {quantity: pressure}
+  STATIC:      {quantity: pressure}
+  FLOW:        {quantity: flow}
+  FLW:         {quantity: flow}
+  CFM:         {quantity: flow}
+  AIRFLOW:     {medium: air, quantity: flow}
+  AFLOW:       {medium: air, quantity: flow}
+  CO2:         {quantity: co2}
+  RH:          {quantity: humidity}      # RH = relative humidity (reheat is RHT / REHEAT)
+  HUM:         {quantity: humidity}
+  HUMIDITY:    {quantity: humidity}
+  AMPS:        {quantity: current}
+  AMP:         {quantity: current}
+  CURRENT:     {quantity: current}
+  SPD:         {quantity: speed}
+  SPEED:       {quantity: speed}
+  VFD:         {quantity: speed}
+
+  # --- compact tokens: one token, a whole point meaning -------------------------
+  DAT:  {position: discharge, medium: air, quantity: temp}
+  SAT:  {position: discharge, medium: air, quantity: temp}
+  MAT:  {position: mixed, medium: air, quantity: temp}
+  RAT:  {position: return, medium: air, quantity: temp}
+  OAT:  {position: outside, medium: air, quantity: temp}
+  ZNT:  {position: zone, quantity: temp}
+  ZAT:  {position: zone, medium: air, quantity: temp}
+  RMT:  {position: zone, quantity: temp}
+  DSP:  {position: discharge, medium: air, quantity: pressure}   # duct static pressure
+  OAD:  {position: outside, subject: damper}
+
+  # --- function ---------------------------------------------------------------
+  STPT:     {function: sp}
+  SETPOINT: {function: sp}
+  SETPT:    {function: sp}
+  SETP:     {function: sp}
+  STP:      {function: sp}
+  CMD:      {function: cmd}
+  COMMAND:  {function: cmd}
+  C:        {function: cmd}       # Metasys: SF-C. (Celsius arrives via the units column.)
+  O:        {function: cmd}       # Metasys: DPR-O = damper output
+  OUTPUT:   {function: cmd}
+  SS:       {function: cmd}       # start/stop
+  START:    {function: cmd}
+  ENABLE:   {function: cmd}
+  ENA:      {function: cmd}
+  S:        {function: status}    # Metasys: SF-S
+  ST:       {function: status}
+  STS:      {function: status}
+  STAT:     {function: status}
+  STATUS:   {function: status}
+  PROOF:    {function: status}
+  PRF:      {function: status}
+  MODE:     {function: status}
+  FB:       {function: sensor}    # feedback
+  FDBK:     {function: sensor}
+  FEEDBACK: {function: sensor}
+  SENS:     {function: sensor}
+  SENSOR:   {function: sensor}
+  SNSR:     {function: sensor}
+  # Descriptive only: "position" appears in damper commands AND feedbacks,
+  # so it must not decide the function by itself.
+  POS:      {}
+  POSITION: {}
+
+  # --- ambiguous tokens: metadata decides -------------------------------------
+  SP:
+    ambiguous:
+      - {function: sp}            # ZN-SP  in °F    -> zone temperature setpoint
+      - {quantity: pressure}      # SA-SP  in inH2O -> supply air static pressure
+  SPT:
+    ambiguous:
+      - {position: zone, quantity: temp}   # ALC convention: SPT = space temperature
+      - {function: sp}                     # elsewhere: SPT = setpoint
+  OUT:
+    ambiguous:
+      - {position: outside}
+      - {function: cmd}
+  RUN:
+    ambiguous:
+      - {function: status}
+      - {function: cmd}
+
+  # --- subject ----------------------------------------------------------------
+  SF:        {subject: fan, position: discharge}
+  SFAN:      {subject: fan, position: discharge}
+  EF:        {subject: fan, position: exhaust}
+  EFAN:      {subject: fan, position: exhaust}
+  FAN:       {subject: fan}
+  DMPR:      {subject: damper}
+  DPR:       {subject: damper}
+  DMP:       {subject: damper}
+  DAMPER:    {subject: damper}
+  VLV:       {subject: valve}
+  VALVE:     {subject: valve}
+  RHT:       {subject: valve, mode: heating}
+  REHEAT:    {subject: valve, mode: heating}
+  RHV:       {subject: valve, mode: heating}
+  STG:       {subject: stage}
+  STAGE:     {subject: stage}
+  OCC:       {subject: occupancy}
+  OCCUPANCY: {subject: occupancy}
+  OCCUPIED:  {subject: occupancy}
+  MOTION:    {subject: occupancy, function: sensor}
+  MOT:       {subject: occupancy, function: sensor}
+  PIR:       {subject: occupancy, function: sensor}
+  FLTR:      {subject: filter}
+  FILTER:    {subject: filter}
+  FILT:      {subject: filter}
+
+  # --- mode -------------------------------------------------------------------
+  HTG:     {mode: heating}
+  HEAT:    {mode: heating}
+  HEATING: {mode: heating}
+  HT:      {mode: heating}
+  CLG:     {mode: cooling}
+  COOL:    {mode: cooling}
+  COOLING: {mode: cooling}
+  CL:      {mode: cooling}
+
+# -----------------------------------------------------------------------------
+# Naming conventions: how people name points when they leave the function out.
+# Applied only when the name has no function word. Because they reflect how the
+# NAME is written, they do not lower confidence (metadata inference does).
+#   if_has: "quantity"       -> the dimension is present
+#   if_has: "subject=stage"  -> the dimension has this value
+# -----------------------------------------------------------------------------
+function_conventions:
+  - {if_has: quantity,      function: sensor, why: "a measured quantity with no SP/CMD/status word is a sensor"}
+  - {if_has: subject=stage, function: cmd,    why: "a heating/cooling stage with no function word is its command"}
+
+# -----------------------------------------------------------------------------
+# Tokens that mark a point as NOT telemetry. The point goes straight to the
+# review queue with this reason and is never force-mapped.
+# -----------------------------------------------------------------------------
+non_telemetry:
+  SPARE:  spare / unused I/O
+  UNUSED: spare / unused I/O
+  TEST:   test point
+  TST:    test point
+  DUMMY:  placeholder point
+  PID:    loop tuning parameter
+  KP:     loop tuning parameter
+  KI:     loop tuning parameter
+  KD:     loop tuning parameter
+  GAIN:   loop tuning parameter
+  ALM:    alarm point (not telemetry)
+  ALARM:  alarm point (not telemetry)
+  COMM:   communication diagnostic
+  COMMS:  communication diagnostic
+  RESET:  reset / utility command
+
+# Written with a slash in the field; replaced before path splitting so
+# "EF-2 S/S" is not read as a path "EF-2 S" / "S".
+slash_abbreviations:
+  "S/S":   SS
+  "O/C":   OC
+  "H/O/A": HOA
+
+# Alphanumeric tokens that camelCase splitting must re-assemble (CO2 -> CO + 2).
+protected_tokens: [CO2, H2O, INH2O]
+
+# -----------------------------------------------------------------------------
+# Units: canonical form, family (compared against point roles), and the names
+# Haystack and QUDT (used by Brick) give the unit. Aliases are matched
+# case-insensitively, ignoring spaces, underscores and hyphens.
+# -----------------------------------------------------------------------------
+units:
+  - {canonical: "°F",     family: temp,      haystack: "°F",     qudt: DEG_F,       aliases: ["°F", "DEGF", "DEG F", "DEGREES-FAHRENHEIT", "FAHRENHEIT", "F"]}
+  - {canonical: "°C",     family: temp,      haystack: "°C",     qudt: DEG_C,       aliases: ["°C", "DEGC", "DEG C", "DEGREES-CELSIUS", "CELSIUS", "C"]}
+  - {canonical: "inH₂O",  family: pressure,  haystack: "inH₂O",  qudt: IN_H2O,      aliases: ["INH2O", "IN H2O", "INWC", "IN WC", "INCHES-OF-WATER"]}
+  - {canonical: "Pa",     family: pressure,  haystack: "Pa",     qudt: PA,          aliases: ["PA", "PASCALS"]}
+  - {canonical: "cfm",    family: flow,      haystack: "cfm",    qudt: FT3-PER-MIN, aliases: ["CFM", "CUBIC-FEET-PER-MINUTE"]}
+  - {canonical: "L/s",    family: flow,      haystack: "L/s",    qudt: L-PER-SEC,   aliases: ["L/S", "LPS", "LITERS-PER-SECOND"]}
+  - {canonical: "%",      family: percent,   haystack: "%",      qudt: PERCENT,     aliases: ["%", "PCT", "PERCENT"]}
+  - {canonical: "%RH",    family: humidity,  haystack: "%RH",    qudt: PERCENT_RH,  aliases: ["%RH", "RH%", "PERCENT-RELATIVE-HUMIDITY"]}
+  - {canonical: "ppm",    family: co2,       haystack: "ppm",    qudt: PPM,         aliases: ["PPM", "PARTS-PER-MILLION"]}
+  - {canonical: "A",      family: current,   haystack: "A",      qudt: A,           aliases: ["A", "AMPS", "AMPERES"]}
+  - {canonical: "Hz",     family: frequency, haystack: "Hz",     qudt: HZ,          aliases: ["HZ", "HERTZ"]}
+  - {canonical: "on/off", family: state,     haystack: null,     qudt: null,        aliases: ["ON/OFF", "OFF/ON", "ACTIVE/INACTIVE", "OPEN/CLOSED", "OCC/UNOCC"]}
+
+# Values that mean "no units" rather than "unknown units".
+none_units: ["", "NONE", "NO-UNITS", "NOUNITS", "N/A", "-"]
+
+# -----------------------------------------------------------------------------
+# BACnet object types: alias spellings, and which functions each type can carry.
+# Physical inputs/outputs are unambiguous; *values* (AV/BV/MSV) can be several
+# things, so they only ever narrow the options.
+# -----------------------------------------------------------------------------
+bacnet_object_types:
+  AI:  [AI, ANALOGINPUT]
+  AO:  [AO, ANALOGOUTPUT]
+  AV:  [AV, ANALOGVALUE]
+  BI:  [BI, BINARYINPUT]
+  BO:  [BO, BINARYOUTPUT]
+  BV:  [BV, BINARYVALUE]
+  MSI: [MSI, MULTISTATEINPUT]
+  MSO: [MSO, MULTISTATEOUTPUT]
+  MSV: [MSV, MULTISTATEVALUE]
+
+object_type_functions:
+  AI:  [sensor]
+  AO:  [cmd]
+  BI:  [status, sensor]
+  BO:  [cmd]
+  AV:  [sp, sensor, cmd]
+  BV:  [cmd, status]
+  MSI: [status]
+  MSO: [cmd]
+  MSV: [status, sp, cmd]

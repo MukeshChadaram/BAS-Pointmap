@@ -1,0 +1,396 @@
+# =============================================================================
+# point_roles.yaml: the mapping standard
+# =============================================================================
+# Each role is one kind of point this tool knows how to recognise and tag.
+#
+#   id            canonical point abbreviation (also the default canonical name)
+#   requires      dimensions a name MUST resolve to (see abbreviations.yaml)
+#   optional      dimensions that MAY appear; if present they must match
+#   medium        expected medium; a contradicting medium rejects the role
+#   units_family  unit families that agree with this role (null = binary/enum)
+#   bacnet_types  object types that agree with this role
+#   equip_types   equipment this role normally lives on (empty = any)
+#   site_level    may exist without equipment (weather / building-level points)
+#   stage         the trailing number in the name is a stage number
+#   canonical     canonical point name; {n} is replaced by the stage number
+#   haystack      Project Haystack 4 tags ("point" is added on export)
+#   brick         Brick Schema 1.3 class
+#
+# Tag and class names were checked against the official Project Haystack defs
+# and the Brick 1.3.0 release (Brick.ttl). Where Brick has no class for a
+# specific concept, the nearest verified parent class is used and marked.
+# Order matters only as a tie-breaker: earlier roles win exact ties.
+# =============================================================================
+version: 1
+
+roles:
+  # ---------------------------------------------------------------- temperatures
+  - id: DA-T
+    name: discharge_air_temp_sensor
+    requires: {position: discharge, quantity: temp, function: sensor}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AI, AV]
+    equip_types: [rtu, ahu, vav, fcu, unit_heater]
+    haystack: [discharge, air, temp, sensor]
+    brick: Supply_Air_Temperature_Sensor
+    kind: Number
+
+  - id: DA-T-SP
+    name: discharge_air_temp_setpoint
+    requires: {position: discharge, quantity: temp, function: sp}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AV, AO]
+    equip_types: [rtu, ahu, vav, fcu]
+    haystack: [discharge, air, temp, sp]
+    brick: Supply_Air_Temperature_Setpoint
+    kind: Number
+
+  - id: MA-T
+    name: mixed_air_temp_sensor
+    requires: {position: mixed, quantity: temp, function: sensor}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AI, AV]
+    equip_types: [rtu, ahu]
+    haystack: [mixed, air, temp, sensor]
+    brick: Mixed_Air_Temperature_Sensor
+    kind: Number
+
+  - id: RA-T
+    name: return_air_temp_sensor
+    requires: {position: return, quantity: temp, function: sensor}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AI, AV]
+    equip_types: [rtu, ahu, fcu]
+    haystack: [return, air, temp, sensor]
+    brick: Return_Air_Temperature_Sensor
+    kind: Number
+
+  - id: OA-T
+    name: outside_air_temp_sensor
+    requires: {position: outside, quantity: temp, function: sensor}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AI, AV]
+    equip_types: [rtu, ahu]
+    site_level: true
+    haystack: [outside, air, temp, sensor]
+    brick: Outside_Air_Temperature_Sensor
+    kind: Number
+
+  - id: ZN-T
+    name: zone_air_temp_sensor
+    requires: {position: zone, quantity: temp, function: sensor}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AI, AV]
+    equip_types: []
+    haystack: [zone, air, temp, sensor]
+    brick: Zone_Air_Temperature_Sensor
+    kind: Number
+
+  - id: ZN-T-SP
+    name: zone_air_temp_setpoint
+    requires: {position: zone, quantity: temp, function: sp}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AV, AO]
+    equip_types: []
+    haystack: [zone, air, temp, sp]
+    brick: Zone_Air_Temperature_Setpoint
+    kind: Number
+
+  - id: ZN-T-CLG-SP
+    name: zone_air_cooling_temp_setpoint
+    requires: {position: zone, quantity: temp, function: sp, mode: cooling}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AV, AO]
+    equip_types: []
+    haystack: [zone, air, temp, cooling, sp]
+    brick: Zone_Air_Cooling_Temperature_Setpoint
+    kind: Number
+
+  - id: ZN-T-HTG-SP
+    name: zone_air_heating_temp_setpoint
+    requires: {position: zone, quantity: temp, function: sp, mode: heating}
+    medium: air
+    units_family: [temp]
+    bacnet_types: [AV, AO]
+    equip_types: []
+    haystack: [zone, air, temp, heating, sp]
+    brick: Zone_Air_Heating_Temperature_Setpoint
+    kind: Number
+
+  # ------------------------------------------------------------------- humidity
+  - id: ZN-RH
+    name: zone_air_humidity_sensor
+    requires: {position: zone, quantity: humidity, function: sensor}
+    medium: air
+    units_family: [humidity, percent]
+    bacnet_types: [AI, AV]
+    equip_types: []
+    haystack: [zone, air, humidity, sensor]
+    brick: Zone_Air_Humidity_Sensor
+    kind: Number
+
+  - id: OA-RH
+    name: outside_air_humidity_sensor
+    requires: {position: outside, quantity: humidity, function: sensor}
+    medium: air
+    units_family: [humidity, percent]
+    bacnet_types: [AI, AV]
+    equip_types: [rtu, ahu]
+    site_level: true
+    haystack: [outside, air, humidity, sensor]
+    brick: Outside_Air_Humidity_Sensor
+    kind: Number
+
+  # --------------------------------------------------------- pressure and flow
+  - id: DA-P
+    name: discharge_air_static_pressure_sensor
+    requires: {position: discharge, quantity: pressure, function: sensor}
+    medium: air
+    units_family: [pressure]
+    bacnet_types: [AI, AV]
+    equip_types: [ahu, rtu]
+    haystack: [discharge, air, pressure, sensor]
+    brick: Supply_Air_Static_Pressure_Sensor
+    kind: Number
+
+  - id: DA-P-SP
+    name: discharge_air_static_pressure_setpoint
+    requires: {position: discharge, quantity: pressure, function: sp}
+    medium: air
+    units_family: [pressure]
+    bacnet_types: [AV, AO]
+    equip_types: [ahu, rtu]
+    haystack: [discharge, air, pressure, sp]
+    brick: Supply_Air_Static_Pressure_Setpoint
+    kind: Number
+
+  - id: AIRFLOW
+    name: discharge_airflow_sensor
+    requires: {quantity: flow, function: sensor}
+    optional: {position: discharge}
+    medium: air
+    units_family: [flow]
+    bacnet_types: [AI, AV]
+    equip_types: [vav, ahu, rtu]
+    haystack: [discharge, air, flow, sensor]
+    brick: Supply_Air_Flow_Sensor
+    kind: Number
+
+  - id: AIRFLOW-SP
+    name: discharge_airflow_setpoint
+    requires: {quantity: flow, function: sp}
+    optional: {position: discharge}
+    medium: air
+    units_family: [flow]
+    bacnet_types: [AV, AO]
+    equip_types: [vav, ahu, rtu]
+    haystack: [discharge, air, flow, sp]
+    brick: Supply_Air_Flow_Setpoint
+    kind: Number
+
+  # ------------------------------------------------------------------------ CO2
+  - id: RA-CO2
+    name: return_air_co2_sensor
+    requires: {position: return, quantity: co2, function: sensor}
+    medium: air
+    units_family: [co2]
+    bacnet_types: [AI, AV]
+    equip_types: [rtu, ahu]
+    haystack: [return, air, co2, concentration, sensor]
+    brick: Return_Air_CO2_Sensor
+    kind: Number
+
+  - id: ZN-CO2
+    name: zone_air_co2_sensor
+    requires: {position: zone, quantity: co2, function: sensor}
+    medium: air
+    units_family: [co2]
+    bacnet_types: [AI, AV]
+    equip_types: []
+    haystack: [zone, air, co2, concentration, sensor]
+    brick: CO2_Sensor          # Brick 1.3 has no Zone_Air_CO2_Sensor; verified parent class
+    kind: Number
+
+  # ----------------------------------------------------------------------- fans
+  - id: SF-C
+    name: supply_fan_cmd
+    requires: {subject: fan, function: cmd}
+    optional: {position: discharge}
+    units_family: null
+    bacnet_types: [BO, BV]
+    equip_types: [rtu, ahu, fcu, unit_heater]
+    haystack: [discharge, fan, run, cmd]
+    brick: Start_Stop_Command
+    kind: Bool
+
+  - id: SF-S
+    name: supply_fan_status
+    requires: {subject: fan, function: status}
+    optional: {position: discharge}
+    units_family: null
+    bacnet_types: [BI, BV]
+    equip_types: [rtu, ahu, fcu, unit_heater]
+    haystack: [discharge, fan, run, sensor]
+    brick: Fan_Status
+    kind: Bool
+
+  - id: SF-A
+    name: supply_fan_motor_current
+    requires: {subject: fan, quantity: current, function: sensor}
+    optional: {position: discharge}
+    units_family: [current]
+    bacnet_types: [AI, AV]
+    equip_types: [rtu, ahu, fcu]
+    haystack: [discharge, fan, elec, current, sensor]
+    brick: Motor_Current_Sensor
+    kind: Number
+
+  - id: SF-SPD
+    name: supply_fan_speed_cmd
+    requires: {subject: fan, quantity: speed, function: cmd}
+    optional: {position: discharge}
+    units_family: [percent, frequency]
+    bacnet_types: [AO, AV]
+    equip_types: [rtu, ahu, fcu]
+    haystack: [discharge, fan, vfd, speed, cmd]
+    brick: Fan_Speed_Command
+    kind: Number
+
+  - id: EF-C
+    name: exhaust_fan_cmd
+    requires: {subject: fan, position: exhaust, function: cmd}
+    units_family: null
+    bacnet_types: [BO, BV]
+    equip_types: [exhaust_fan, rtu, ahu]
+    haystack: [exhaust, fan, run, cmd]
+    brick: Start_Stop_Command
+    kind: Bool
+
+  - id: EF-S
+    name: exhaust_fan_status
+    requires: {subject: fan, position: exhaust, function: status}
+    units_family: null
+    bacnet_types: [BI, BV]
+    equip_types: [exhaust_fan, rtu, ahu]
+    haystack: [exhaust, fan, run, sensor]
+    brick: Fan_Status
+    kind: Bool
+
+  # ------------------------------------------------------- dampers and valves
+  - id: DMPR-C
+    name: damper_cmd
+    requires: {subject: damper, function: cmd}
+    optional: {position: discharge}
+    units_family: [percent]
+    bacnet_types: [AO, AV]
+    equip_types: [vav, fcu]
+    haystack: [damper, cmd]
+    brick: Damper_Position_Command
+    kind: Number
+
+  - id: DMPR-POS
+    name: damper_position_feedback
+    requires: {subject: damper, function: sensor}
+    optional: {position: discharge}
+    units_family: [percent]
+    bacnet_types: [AI, AV]
+    equip_types: [vav, fcu]
+    haystack: [damper, sensor]
+    brick: Damper_Position_Sensor
+    kind: Number
+
+  - id: OA-DMPR-C
+    name: outside_air_damper_cmd
+    requires: {subject: damper, position: outside, function: cmd}
+    units_family: [percent]
+    bacnet_types: [AO, AV]
+    equip_types: [rtu, ahu]
+    haystack: [outside, damper, cmd]
+    brick: Damper_Position_Command
+    kind: Number
+
+  - id: RHT-VLV-C
+    name: reheat_valve_cmd
+    requires: {subject: valve, mode: heating, function: cmd}
+    units_family: [percent]
+    bacnet_types: [AO, AV, BO]
+    equip_types: [vav]
+    haystack: [reheat, cmd]
+    brick: Valve_Position_Command
+    kind: Number
+
+  - id: HTG-VLV-C
+    name: heating_valve_cmd
+    requires: {subject: valve, mode: heating, function: cmd}
+    units_family: [percent]
+    bacnet_types: [AO, AV, BO]
+    equip_types: [fcu, ahu]
+    haystack: [heat, valve, cmd]
+    brick: Valve_Position_Command
+    kind: Number
+
+  # -------------------------------------------------------------------- staging
+  # Haystack prototype: {stage:1 heat run cmd point}. The stage number is
+  # exported as the Haystack "stage" value tag.
+  - id: HTG-STG-C
+    name: heating_stage_cmd
+    requires: {mode: heating, subject: stage, function: cmd}
+    units_family: null
+    bacnet_types: [BO, BV]
+    equip_types: [rtu, ahu, fcu, unit_heater]
+    stage: true
+    canonical: "HTG-STG{n}-C"
+    haystack: [heat, run, cmd]
+    brick: Heating_Command
+    kind: Bool
+
+  - id: CLG-STG-C
+    name: cooling_stage_cmd
+    requires: {mode: cooling, subject: stage, function: cmd}
+    units_family: null
+    bacnet_types: [BO, BV]
+    equip_types: [rtu, ahu]
+    stage: true
+    canonical: "CLG-STG{n}-C"
+    haystack: [cool, run, cmd]
+    brick: Cooling_Command
+    kind: Bool
+
+  # ------------------------------------------------------ occupancy and filter
+  - id: OCC-S
+    name: occupancy_sensor
+    requires: {subject: occupancy, function: sensor}
+    units_family: null
+    bacnet_types: [BI, BV]
+    equip_types: []
+    haystack: [occupied, sensor]
+    brick: Occupancy_Sensor
+    kind: Bool
+
+  - id: OCC-MODE
+    name: occupancy_mode
+    requires: {subject: occupancy, function: status}
+    units_family: null
+    bacnet_types: [BV, MSV, BI]
+    equip_types: []
+    haystack: [occupied, sp]
+    brick: Occupancy_Status
+    kind: Bool
+
+  - id: FLTR-S
+    name: filter_status
+    requires: {subject: filter, function: status}
+    units_family: null
+    bacnet_types: [BI, BV]
+    equip_types: [rtu, ahu, fcu]
+    haystack: [filter, sensor]
+    brick: Filter_Status
+    kind: Bool

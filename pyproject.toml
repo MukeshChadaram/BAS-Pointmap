@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bas-pointmap"
+version = "0.1.0"
+description = "Map multi-vendor BAS point names to Project Haystack tags and Brick classes, with confidence scoring and a human review queue."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [{name = "Venkata Mukesh Chadaram"}]
+dependencies = ["pandas>=2.0", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "rdflib>=7"]
+
+[project.scripts]
+pointmap = "pointmap.cli:main"
+
+[tool.setuptools]
+packages = ["pointmap", "pointmap.export"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,57 @@
+point_name,device_instance,expected_equip,expected_point,expected_role,expected_canonical_name,expected_outcome,note
+/Drivers/BacnetNetwork/RTU_1/points/DAT,4001,RTU-01,DA-T,DA-T,RTU-01.DA-T,map,
+/Drivers/BacnetNetwork/RTU_1/points/RAT,4001,RTU-01,RA-T,RA-T,RTU-01.RA-T,map,
+/Drivers/BacnetNetwork/RTU_1/points/SpaceTemp,4001,RTU-01,ZN-T,ZN-T,RTU-01.ZN-T,map,
+/Drivers/BacnetNetwork/RTU_1/points/SpaceTempSp,4001,RTU-01,ZN-T-SP,ZN-T-SP,RTU-01.ZN-T-SP,map,
+/Drivers/BacnetNetwork/RTU_1/points/SupFanCmd,4001,RTU-01,SF-C,SF-C,RTU-01.SF-C,map,
+/Drivers/BacnetNetwork/RTU_1/points/SupFanSts,4001,RTU-01,SF-S,SF-S,RTU-01.SF-S,map,
+/Drivers/BacnetNetwork/RTU_1/points/HtgStg1,4001,RTU-01,HTG-STG1-C,HTG-STG-C,RTU-01.HTG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_1/points/HtgStg2,4001,RTU-01,HTG-STG2-C,HTG-STG-C,RTU-01.HTG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_1/points/ClgStg1,4001,RTU-01,CLG-STG1-C,CLG-STG-C,RTU-01.CLG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_1/points/ClgStg2,4001,RTU-01,CLG-STG2-C,CLG-STG-C,RTU-01.CLG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_1/points/EconDmprPos,4001,RTU-01,OA-DMPR-C,OA-DMPR-C,RTU-01.OA-DMPR-C,map,economizer damper = outside air damper
+/Drivers/BacnetNetwork/RTU_1/points/RaCO2,4001,RTU-01,RA-CO2,RA-CO2,RTU-01.RA-CO2,map,
+/Drivers/BacnetNetwork/RTU_1/points/EffClgSp,4001,RTU-01,ZN-T-CLG-SP,ZN-T-CLG-SP,RTU-01.ZN-T-CLG-SP,map,effective cooling setpoint
+/Drivers/BacnetNetwork/RTU_2/points/DAT,4002,RTU-02,DA-T,DA-T,RTU-02.DA-T,map,
+/Drivers/BacnetNetwork/RTU_2/points/RAT,4002,RTU-02,RA-T,RA-T,RTU-02.RA-T,map,units misconfigured as %
+/Drivers/BacnetNetwork/RTU_2/points/SpaceTemp,4002,RTU-02,ZN-T,ZN-T,RTU-02.ZN-T,map,
+/Drivers/BacnetNetwork/RTU_2/points/SpaceTempSp,4002,RTU-02,ZN-T-SP,ZN-T-SP,RTU-02.ZN-T-SP,map,
+/Drivers/BacnetNetwork/RTU_2/points/SupFanCmd,4002,RTU-02,SF-C,SF-C,RTU-02.SF-C,map,
+/Drivers/BacnetNetwork/RTU_2/points/SupFanSts,4002,RTU-02,SF-S,SF-S,RTU-02.SF-S,map,
+/Drivers/BacnetNetwork/RTU_2/points/HtgStg1,4002,RTU-02,HTG-STG1-C,HTG-STG-C,RTU-02.HTG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_2/points/HtgStg2,4002,RTU-02,HTG-STG2-C,HTG-STG-C,RTU-02.HTG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_2/points/ClgStg1,4002,RTU-02,CLG-STG1-C,CLG-STG-C,RTU-02.CLG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_2/points/ClgStg2,4002,RTU-02,CLG-STG2-C,CLG-STG-C,RTU-02.CLG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_2/points/EconDmprPos,4002,RTU-02,OA-DMPR-C,OA-DMPR-C,RTU-02.OA-DMPR-C,map,economizer damper = outside air damper
+/Drivers/BacnetNetwork/RTU_2/points/RaCO2,4002,RTU-02,RA-CO2,RA-CO2,RTU-02.RA-CO2,map,
+/Drivers/BacnetNetwork/RTU_2/points/CommStatus,4002,,NONE,,,refuse,communication diagnostic
+/Drivers/BacnetNetwork/RTU_3/points/DAT,4003,RTU-03,DA-T,DA-T,RTU-03.DA-T,map,
+/Drivers/BacnetNetwork/RTU_3/points/RAT,4003,RTU-03,RA-T,RA-T,RTU-03.RA-T,map,
+/Drivers/BacnetNetwork/RTU_3/points/Spacetemp,4003,RTU-03,ZN-T,ZN-T,RTU-03.ZN-T,map,"hand-edited name, no camelCase"
+/Drivers/BacnetNetwork/RTU_3/points/SpaceTempSp,4003,RTU-03,ZN-T-SP,ZN-T-SP,RTU-03.ZN-T-SP,map,
+/Drivers/BacnetNetwork/RTU_3/points/SupFanCmd,4003,RTU-03,SF-C,SF-C,RTU-03.SF-C,map,
+/Drivers/BacnetNetwork/RTU_3/points/SupFanSts,4003,RTU-03,SF-S,SF-S,RTU-03.SF-S,map,
+/Drivers/BacnetNetwork/RTU_3/points/HtgStg1,4003,RTU-03,HTG-STG1-C,HTG-STG-C,RTU-03.HTG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_3/points/HtgStg2,4003,RTU-03,HTG-STG2-C,HTG-STG-C,RTU-03.HTG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_3/points/ClgStg1,4003,RTU-03,CLG-STG1-C,CLG-STG-C,RTU-03.CLG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_3/points/ClgStg2,4003,RTU-03,CLG-STG2-C,CLG-STG-C,RTU-03.CLG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_3/points/EconDmprPos,4003,RTU-03,OA-DMPR-C,OA-DMPR-C,RTU-03.OA-DMPR-C,map,economizer damper = outside air damper
+/Drivers/BacnetNetwork/RTU_3/points/FilterSts,4003,RTU-03,FLTR-S,FLTR-S,RTU-03.FLTR-S,map,
+/Drivers/BacnetNetwork/RTU_4/points/DAT,4004,RTU-04,DA-T,DA-T,RTU-04.DA-T,map,
+/Drivers/BacnetNetwork/RTU_4/points/RAT,4004,RTU-04,RA-T,RA-T,RTU-04.RA-T,map,
+/Drivers/BacnetNetwork/RTU_4/points/SpaceTemp,4004,RTU-04,ZN-T,ZN-T,RTU-04.ZN-T,map,
+/Drivers/BacnetNetwork/RTU_4/points/SpaceTempSp,4004,RTU-04,ZN-T-SP,ZN-T-SP,RTU-04.ZN-T-SP,map,
+/Drivers/BacnetNetwork/RTU_4/points/SupFanCmd,4004,RTU-04,SF-C,SF-C,RTU-04.SF-C,map,
+/Drivers/BacnetNetwork/RTU_4/points/SupFanSts,4004,RTU-04,SF-S,SF-S,RTU-04.SF-S,map,
+/Drivers/BacnetNetwork/RTU_4/points/HtgStg1,4004,RTU-04,HTG-STG1-C,HTG-STG-C,RTU-04.HTG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_4/points/HtgStg2,4004,RTU-04,HTG-STG2-C,HTG-STG-C,RTU-04.HTG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_4/points/ClgStg1,4004,RTU-04,CLG-STG1-C,CLG-STG-C,RTU-04.CLG-STG1-C,map,
+/Drivers/BacnetNetwork/RTU_4/points/ClgStg2,4004,RTU-04,CLG-STG2-C,CLG-STG-C,RTU-04.CLG-STG2-C,map,
+/Drivers/BacnetNetwork/RTU_4/points/EconDmprPos,4004,RTU-04,OA-DMPR-C,OA-DMPR-C,RTU-04.OA-DMPR-C,map,economizer damper = outside air damper
+/Drivers/BacnetNetwork/RTU_4/points/FilterSts,4004,RTU-04,FLTR-S,FLTR-S,RTU-04.FLTR-S,map,
+/Drivers/BacnetNetwork/RTU_4_old/points/DAT,4104,RTU-04,DA-T,DA-T,RTU-04.DA-T,map,stale device left in the station; a person must pick the live one
+/Drivers/BacnetNetwork/EF_1/points/Cmd,4010,EF-01,EF-C,EF-C,EF-01.EF-C,map,
+/Drivers/BacnetNetwork/EF_1/points/Sts,4010,EF-01,EF-S,EF-S,EF-01.EF-S,map,
+/Drivers/BacnetNetwork/Weather/points/OutdoorTemp,4000,,OA-T,OA-T,STORE-01.OA-T,map,site-level
+/Drivers/BacnetNetwork/Weather/points/OutdoorHumidity,4000,,OA-RH,OA-RH,STORE-01.OA-RH,map,site-level
+/Drivers/BacnetNetwork/LightingPanel/points/Zone3Relay,4020,,NONE,,,refuse,out of scope: lighting
