@@ -1,0 +1,1858 @@
+{
+  "_kind": "grid",
+  "meta": {
+    "ver": "3.0"
+  },
+  "cols": [
+    {
+      "name": "id"
+    },
+    {
+      "name": "dis"
+    },
+    {
+      "name": "site"
+    },
+    {
+      "name": "siteRef"
+    },
+    {
+      "name": "equip"
+    },
+    {
+      "name": "ahu"
+    },
+    {
+      "name": "rtu"
+    },
+    {
+      "name": "vav"
+    },
+    {
+      "name": "exhaust"
+    },
+    {
+      "name": "fan"
+    },
+    {
+      "name": "motor"
+    },
+    {
+      "name": "heatingOnly"
+    },
+    {
+      "name": "fanPowered"
+    },
+    {
+      "name": "radiator"
+    },
+    {
+      "name": "fcu"
+    },
+    {
+      "name": "pointmapSource"
+    },
+    {
+      "name": "kind"
+    },
+    {
+      "name": "equipRef"
+    },
+    {
+      "name": "discharge"
+    },
+    {
+      "name": "air"
+    },
+    {
+      "name": "temp"
+    },
+    {
+      "name": "sensor"
+    },
+    {
+      "name": "point"
+    },
+    {
+      "name": "unit"
+    },
+    {
+      "name": "return"
+    },
+    {
+      "name": "zone"
+    },
+    {
+      "name": "run"
+    },
+    {
+      "name": "cmd"
+    },
+    {
+      "name": "heat"
+    },
+    {
+      "name": "stage"
+    },
+    {
+      "name": "cool"
+    },
+    {
+      "name": "mixed"
+    },
+    {
+      "name": "outside"
+    },
+    {
+      "name": "damper"
+    },
+    {
+      "name": "filter"
+    },
+    {
+      "name": "sp"
+    },
+    {
+      "name": "flow"
+    },
+    {
+      "name": "reheat"
+    },
+    {
+      "name": "humidity"
+    }
+  ],
+  "rows": [
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "dis": "LEGACY-MIX",
+      "site": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "dis": "RTU-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "ahu": {
+        "_kind": "marker"
+      },
+      "rtu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "dis": "AHU-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "ahu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01",
+        "dis": "VAV-2-01"
+      },
+      "dis": "VAV-2-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02",
+        "dis": "VAV-2-02"
+      },
+      "dis": "VAV-2-02",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03",
+        "dis": "VAV-2-03"
+      },
+      "dis": "VAV-2-03",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04",
+        "dis": "VAV-2-04"
+      },
+      "dis": "VAV-2-04",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.EF-02",
+        "dis": "EF-02"
+      },
+      "dis": "EF-02",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "exhaust": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "motor": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.UH-03",
+        "dis": "UH-03"
+      },
+      "dis": "UH-03",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "heatingOnly": {
+        "_kind": "marker"
+      },
+      "fanPowered": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.BB-01",
+        "dis": "BB-01"
+      },
+      "dis": "BB-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "radiator": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.FCU-01",
+        "dis": "FCU-01"
+      },
+      "dis": "FCU-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "fcu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.DA-T",
+        "dis": "RTU-01.DA-T"
+      },
+      "dis": "RTU-01.DA-T",
+      "pointmapSource": "Rtu #1 Disch Air Tmp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.DA-T~2",
+        "dis": "RTU-01.DA-T"
+      },
+      "dis": "RTU-01.DA-T",
+      "pointmapSource": "RTU1-DAT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.RA-T",
+        "dis": "RTU-01.RA-T"
+      },
+      "dis": "RTU-01.RA-T",
+      "pointmapSource": "RTU1-RAT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.ZN-T",
+        "dis": "RTU-01.ZN-T"
+      },
+      "dis": "RTU-01.ZN-T",
+      "pointmapSource": "RTU1 ZN TEMPATURE",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.SF-C",
+        "dis": "RTU-01.SF-C"
+      },
+      "dis": "RTU-01.SF-C",
+      "pointmapSource": "RTU1 SF S/S",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.SF-S",
+        "dis": "RTU-01.SF-S"
+      },
+      "dis": "RTU-01.SF-S",
+      "pointmapSource": "RTU1 SF STATUS",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.HTG-STG1-C",
+        "dis": "RTU-01.HTG-STG1-C"
+      },
+      "dis": "RTU-01.HTG-STG1-C",
+      "pointmapSource": "RTU1 HEAT 1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.CLG-STG1-C",
+        "dis": "RTU-01.CLG-STG1-C"
+      },
+      "dis": "RTU-01.CLG-STG1-C",
+      "pointmapSource": "RTU1 COOL 1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "cool": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01.DA-T~3",
+        "dis": "RTU-01.DA-T"
+      },
+      "dis": "RTU-01.DA-T",
+      "pointmapSource": "RTU1 DAT HI LIMIT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.RTU-01",
+        "dis": "RTU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.MA-T",
+        "dis": "AHU-01.MA-T"
+      },
+      "dis": "AHU-01.MA-T",
+      "pointmapSource": "AHU1 MAT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "mixed": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.MA-T~2",
+        "dis": "AHU-01.MA-T"
+      },
+      "dis": "AHU-01.MA-T",
+      "pointmapSource": "AHU1 MAT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "mixed": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.DA-T",
+        "dis": "AHU-01.DA-T"
+      },
+      "dis": "AHU-01.DA-T",
+      "pointmapSource": "AHU1 SAT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.RA-T",
+        "dis": "AHU-01.RA-T"
+      },
+      "dis": "AHU-01.RA-T",
+      "pointmapSource": "AHU1 RAT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.SF-C",
+        "dis": "AHU-01.SF-C"
+      },
+      "dis": "AHU-01.SF-C",
+      "pointmapSource": "AHU1 SUPPLY FAN CMD",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.SF-S",
+        "dis": "AHU-01.SF-S"
+      },
+      "dis": "AHU-01.SF-S",
+      "pointmapSource": "AHU1 SUPPLY FAN STATUS",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.OA-DMPR-C",
+        "dis": "AHU-01.OA-DMPR-C"
+      },
+      "dis": "AHU-01.OA-DMPR-C",
+      "pointmapSource": "AHU1 OA DAMPER",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01.FLTR-S",
+        "dis": "AHU-01.FLTR-S"
+      },
+      "dis": "AHU-01.FLTR-S",
+      "pointmapSource": "AHU1 FILTER STATUS",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.AHU-01",
+        "dis": "AHU-01"
+      },
+      "filter": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01.ZN-T",
+        "dis": "VAV-2-01.ZN-T"
+      },
+      "dis": "VAV-2-01.ZN-T",
+      "pointmapSource": "vav2-01_ZN_TEMP_DegF",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01",
+        "dis": "VAV-2-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01.ZN-T-SP",
+        "dis": "VAV-2-01.ZN-T-SP"
+      },
+      "dis": "VAV-2-01.ZN-T-SP",
+      "pointmapSource": "vav2-01_ZN_SETPT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01",
+        "dis": "VAV-2-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01.DMPR-C",
+        "dis": "VAV-2-01.DMPR-C"
+      },
+      "dis": "VAV-2-01.DMPR-C",
+      "pointmapSource": "vav2-01_DMPR_CMD",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01",
+        "dis": "VAV-2-01"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01.AIRFLOW",
+        "dis": "VAV-2-01.AIRFLOW"
+      },
+      "dis": "VAV-2-01.AIRFLOW",
+      "pointmapSource": "vav2-01_AIRFLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-01",
+        "dis": "VAV-2-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02.ZN-T",
+        "dis": "VAV-2-02.ZN-T"
+      },
+      "dis": "VAV-2-02.ZN-T",
+      "pointmapSource": "vav2-02_ZN_TEMP_DegF",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02",
+        "dis": "VAV-2-02"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02.ZN-T-SP",
+        "dis": "VAV-2-02.ZN-T-SP"
+      },
+      "dis": "VAV-2-02.ZN-T-SP",
+      "pointmapSource": "vav2-02_ZN_SETPT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02",
+        "dis": "VAV-2-02"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02.DMPR-C",
+        "dis": "VAV-2-02.DMPR-C"
+      },
+      "dis": "VAV-2-02.DMPR-C",
+      "pointmapSource": "vav2-02_DMPR_CMD",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02",
+        "dis": "VAV-2-02"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02.AIRFLOW",
+        "dis": "VAV-2-02.AIRFLOW"
+      },
+      "dis": "VAV-2-02.AIRFLOW",
+      "pointmapSource": "vav2-02_AIRFLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02",
+        "dis": "VAV-2-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02.RHT-VLV-C",
+        "dis": "VAV-2-02.RHT-VLV-C"
+      },
+      "dis": "VAV-2-02.RHT-VLV-C",
+      "pointmapSource": "vav2-02_RHT_VLV",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-02",
+        "dis": "VAV-2-02"
+      },
+      "reheat": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03.ZN-T",
+        "dis": "VAV-2-03.ZN-T"
+      },
+      "dis": "VAV-2-03.ZN-T",
+      "pointmapSource": "vav2-03_ZN_TEMP_DegF",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03",
+        "dis": "VAV-2-03"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03.ZN-T-SP",
+        "dis": "VAV-2-03.ZN-T-SP"
+      },
+      "dis": "VAV-2-03.ZN-T-SP",
+      "pointmapSource": "vav2-03_ZN_SETPT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03",
+        "dis": "VAV-2-03"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03.DMPR-C",
+        "dis": "VAV-2-03.DMPR-C"
+      },
+      "dis": "VAV-2-03.DMPR-C",
+      "pointmapSource": "vav2-03_DMPR_CMD",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03",
+        "dis": "VAV-2-03"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03.AIRFLOW",
+        "dis": "VAV-2-03.AIRFLOW"
+      },
+      "dis": "VAV-2-03.AIRFLOW",
+      "pointmapSource": "vav2-03_AIRFLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-03",
+        "dis": "VAV-2-03"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04.ZN-T",
+        "dis": "VAV-2-04.ZN-T"
+      },
+      "dis": "VAV-2-04.ZN-T",
+      "pointmapSource": "vav2-04_ZN_TEMP_DegF",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04",
+        "dis": "VAV-2-04"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04.ZN-T-SP",
+        "dis": "VAV-2-04.ZN-T-SP"
+      },
+      "dis": "VAV-2-04.ZN-T-SP",
+      "pointmapSource": "vav2-04_ZN_SETPT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04",
+        "dis": "VAV-2-04"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04.DMPR-C",
+        "dis": "VAV-2-04.DMPR-C"
+      },
+      "dis": "VAV-2-04.DMPR-C",
+      "pointmapSource": "vav2-04_DMPR_CMD",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04",
+        "dis": "VAV-2-04"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04.AIRFLOW",
+        "dis": "VAV-2-04.AIRFLOW"
+      },
+      "dis": "VAV-2-04.AIRFLOW",
+      "pointmapSource": "vav2-04_AIRFLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.VAV-2-04",
+        "dis": "VAV-2-04"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.EF-02.EF-C",
+        "dis": "EF-02.EF-C"
+      },
+      "dis": "EF-02.EF-C",
+      "pointmapSource": "EF-2 S/S",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.EF-02",
+        "dis": "EF-02"
+      },
+      "exhaust": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.EF-02.EF-S",
+        "dis": "EF-02.EF-S"
+      },
+      "dis": "EF-02.EF-S",
+      "pointmapSource": "EF-2 STATUS",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.EF-02",
+        "dis": "EF-02"
+      },
+      "exhaust": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.UH-03.SF-C",
+        "dis": "UH-03.SF-C"
+      },
+      "dis": "UH-03.SF-C",
+      "pointmapSource": "UH-3 FAN",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.UH-03",
+        "dis": "UH-03"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.UH-03.ZN-T",
+        "dis": "UH-03.ZN-T"
+      },
+      "dis": "UH-03.ZN-T",
+      "pointmapSource": "UH-3 RM TEMP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.UH-03",
+        "dis": "UH-03"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.BB-01.ZN-T",
+        "dis": "BB-01.ZN-T"
+      },
+      "dis": "BB-01.ZN-T",
+      "pointmapSource": "BB-1 RM TEMP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.BB-01",
+        "dis": "BB-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.BB-01.ZN-T-SP",
+        "dis": "BB-01.ZN-T-SP"
+      },
+      "dis": "BB-01.ZN-T-SP",
+      "pointmapSource": "BB-1 RM TEMP SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.BB-01",
+        "dis": "BB-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.FCU-01.ZN-T",
+        "dis": "FCU-01.ZN-T"
+      },
+      "dis": "FCU-01.ZN-T",
+      "pointmapSource": "FCU-1 ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.FCU-01",
+        "dis": "FCU-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.FCU-01.SF-C",
+        "dis": "FCU-01.SF-C"
+      },
+      "dis": "FCU-01.SF-C",
+      "pointmapSource": "FCU-1 FAN SS",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.FCU-01",
+        "dis": "FCU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.LEGACY-MIX.OA-T",
+        "dis": "LEGACY-MIX.OA-T"
+      },
+      "dis": "LEGACY-MIX.OA-T",
+      "pointmapSource": "OAT",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX.LEGACY-MIX.OA-RH",
+        "dis": "LEGACY-MIX.OA-RH"
+      },
+      "dis": "LEGACY-MIX.OA-RH",
+      "pointmapSource": "OA HUMIDITY",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "LEGACY-MIX",
+        "dis": "LEGACY-MIX"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "humidity": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%RH"
+    }
+  ]
+}

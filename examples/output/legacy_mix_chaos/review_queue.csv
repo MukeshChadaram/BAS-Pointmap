@@ -1,0 +1,13 @@
+row,original_name,device_instance,object_type,units,equip_ref,best_guess,confidence,review_reason,flags
+9,RTU1 COOL 2,5001,,,RTU-01,CLG-STG-C,0.45,low confidence: best guess CLG-STG-C (0.45),
+11,RTU1 DAT ALM,5001,BV,,RTU-01,,0.00,alarm point (not telemetry),
+12,SPARE_AI_3,5001,AI,,,,0.00,spare / unused I/O,
+19,AHU1 DUCT STATIC,5010,AI,inH₂O,AHU-01,,0.00,no point role matches: quantity=pressure,
+22,AHU1 PID KP,5010,AV,,AHU-01,,0.00,loop tuning parameter,
+44,UH-3 HEAT,5040,BO,,UH-03,,0.00,no point role matches: mode=heating,
+47,VH-1 VESTIBULE TEMP,5060,AI,°F,VH-01,,0.00,no point role matches: quantity=temp,
+50,FCU-1 HW VLV,5070,AO,%,FCU-01,,0.00,no point role matches: subject=valve,
+53,ROOM 214 TEMP,5000,AI,°F,,ZN-T,0.80,no equipment in the name: best guess ZN-T (0.80); assign equipment from the device list or drawings,NO_EQUIPMENT: point could not be attached to equipment | INDEXED: numbered point (214); confirm it is a distinct sensor
+54,LIGHTING RELAY 4,5000,BO,,,,0.00,"no recognizable tokens (LIGHTING, RELAY)",
+55,MAIN KW,5000,AI,,,,0.00,"no recognizable tokens (MAIN, KW)",UNITS_UNKNOWN: units 'kW' not recognized
+56,DHW TEMP,5000,AI,°F,,,0.00,no point role matches: quantity=temp,

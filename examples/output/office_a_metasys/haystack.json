@@ -1,0 +1,2489 @@
+{
+  "_kind": "grid",
+  "meta": {
+    "ver": "3.0"
+  },
+  "cols": [
+    {
+      "name": "id"
+    },
+    {
+      "name": "dis"
+    },
+    {
+      "name": "site"
+    },
+    {
+      "name": "siteRef"
+    },
+    {
+      "name": "equip"
+    },
+    {
+      "name": "ahu"
+    },
+    {
+      "name": "vav"
+    },
+    {
+      "name": "pointmapSource"
+    },
+    {
+      "name": "kind"
+    },
+    {
+      "name": "equipRef"
+    },
+    {
+      "name": "discharge"
+    },
+    {
+      "name": "air"
+    },
+    {
+      "name": "temp"
+    },
+    {
+      "name": "sensor"
+    },
+    {
+      "name": "point"
+    },
+    {
+      "name": "unit"
+    },
+    {
+      "name": "return"
+    },
+    {
+      "name": "mixed"
+    },
+    {
+      "name": "outside"
+    },
+    {
+      "name": "pressure"
+    },
+    {
+      "name": "sp"
+    },
+    {
+      "name": "fan"
+    },
+    {
+      "name": "run"
+    },
+    {
+      "name": "cmd"
+    },
+    {
+      "name": "vfd"
+    },
+    {
+      "name": "speed"
+    },
+    {
+      "name": "damper"
+    },
+    {
+      "name": "co2"
+    },
+    {
+      "name": "concentration"
+    },
+    {
+      "name": "heat"
+    },
+    {
+      "name": "valve"
+    },
+    {
+      "name": "zone"
+    },
+    {
+      "name": "flow"
+    },
+    {
+      "name": "humidity"
+    }
+  ],
+  "rows": [
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "dis": "OFFICE-A",
+      "site": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "dis": "AHU-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "ahu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02",
+        "dis": "AHU-02"
+      },
+      "dis": "AHU-02",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "ahu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201",
+        "dis": "VAV-201"
+      },
+      "dis": "VAV-201",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202",
+        "dis": "VAV-202"
+      },
+      "dis": "VAV-202",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203",
+        "dis": "VAV-203"
+      },
+      "dis": "VAV-203",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204",
+        "dis": "VAV-204"
+      },
+      "dis": "VAV-204",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205",
+        "dis": "VAV-205"
+      },
+      "dis": "VAV-205",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301",
+        "dis": "VAV-301"
+      },
+      "dis": "VAV-301",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302",
+        "dis": "VAV-302"
+      },
+      "dis": "VAV-302",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303",
+        "dis": "VAV-303"
+      },
+      "dis": "VAV-303",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "vav": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.DA-T",
+        "dis": "AHU-01.DA-T"
+      },
+      "dis": "AHU-01.DA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.SA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.RA-T",
+        "dis": "AHU-01.RA-T"
+      },
+      "dis": "AHU-01.RA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.RA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.MA-T",
+        "dis": "AHU-01.MA-T"
+      },
+      "dis": "AHU-01.MA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.MA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "mixed": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.OA-T",
+        "dis": "AHU-01.OA-T"
+      },
+      "dis": "AHU-01.OA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.OA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.DA-P",
+        "dis": "AHU-01.DA-P"
+      },
+      "dis": "AHU-01.DA-P",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.SA-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "pressure": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "inH₂O"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.DA-P-SP",
+        "dis": "AHU-01.DA-P-SP"
+      },
+      "dis": "AHU-01.DA-P-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.SA-SP-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "pressure": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "inH₂O"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.DA-T-SP",
+        "dis": "AHU-01.DA-T-SP"
+      },
+      "dis": "AHU-01.DA-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.SAT-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.SF-C",
+        "dis": "AHU-01.SF-C"
+      },
+      "dis": "AHU-01.SF-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.SF-C",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.SF-S",
+        "dis": "AHU-01.SF-S"
+      },
+      "dis": "AHU-01.SF-S",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.SF-S",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.SF-SPD",
+        "dis": "AHU-01.SF-SPD"
+      },
+      "dis": "AHU-01.SF-SPD",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.SF-VFD",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "vfd": {
+        "_kind": "marker"
+      },
+      "speed": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.OA-DMPR-C",
+        "dis": "AHU-01.OA-DMPR-C"
+      },
+      "dis": "AHU-01.OA-DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.OAD-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.RA-CO2",
+        "dis": "AHU-01.RA-CO2"
+      },
+      "dis": "AHU-01.RA-CO2",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.RA-CO2",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "co2": {
+        "_kind": "marker"
+      },
+      "concentration": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "ppm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.HTG-VLV-C",
+        "dis": "AHU-01.HTG-VLV-C"
+      },
+      "dis": "AHU-01.HTG-VLV-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-1.HTG-VLV-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "valve": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02.DA-T",
+        "dis": "AHU-02.DA-T"
+      },
+      "dis": "AHU-02.DA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-2.DA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02",
+        "dis": "AHU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02.RA-T",
+        "dis": "AHU-02.RA-T"
+      },
+      "dis": "AHU-02.RA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-2.RA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02",
+        "dis": "AHU-02"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02.MA-T",
+        "dis": "AHU-02.MA-T"
+      },
+      "dis": "AHU-02.MA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-2.MA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02",
+        "dis": "AHU-02"
+      },
+      "mixed": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02.DA-P",
+        "dis": "AHU-02.DA-P"
+      },
+      "dis": "AHU-02.DA-P",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-2.SA-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02",
+        "dis": "AHU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "pressure": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "inH₂O"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02.SF-C",
+        "dis": "AHU-02.SF-C"
+      },
+      "dis": "AHU-02.SF-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-2.SF-C",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02",
+        "dis": "AHU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02.SF-S",
+        "dis": "AHU-02.SF-S"
+      },
+      "dis": "AHU-02.SF-S",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-1.AHU-2.SF-S",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-02",
+        "dis": "AHU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01.DA-T~2",
+        "dis": "AHU-01.DA-T"
+      },
+      "dis": "AHU-01.DA-T",
+      "pointmapSource": "OFFICE-A:NAE-02/FC-1.AHU-1.SA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.AHU-01",
+        "dis": "AHU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201.ZN-T",
+        "dis": "VAV-201.ZN-T"
+      },
+      "dis": "VAV-201.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-201.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201",
+        "dis": "VAV-201"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201.ZN-T-SP",
+        "dis": "VAV-201.ZN-T-SP"
+      },
+      "dis": "VAV-201.ZN-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-201.ZN-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201",
+        "dis": "VAV-201"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201.DMPR-C",
+        "dis": "VAV-201.DMPR-C"
+      },
+      "dis": "VAV-201.DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-201.DPR-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201",
+        "dis": "VAV-201"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201.AIRFLOW",
+        "dis": "VAV-201.AIRFLOW"
+      },
+      "dis": "VAV-201.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-201.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201",
+        "dis": "VAV-201"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201.AIRFLOW-SP",
+        "dis": "VAV-201.AIRFLOW-SP"
+      },
+      "dis": "VAV-201.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-201.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-201",
+        "dis": "VAV-201"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202.ZN-T",
+        "dis": "VAV-202.ZN-T"
+      },
+      "dis": "VAV-202.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-202.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202",
+        "dis": "VAV-202"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202.ZN-T-SP",
+        "dis": "VAV-202.ZN-T-SP"
+      },
+      "dis": "VAV-202.ZN-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-202.ZN-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202",
+        "dis": "VAV-202"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202.DMPR-C",
+        "dis": "VAV-202.DMPR-C"
+      },
+      "dis": "VAV-202.DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-202.DPR-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202",
+        "dis": "VAV-202"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202.AIRFLOW",
+        "dis": "VAV-202.AIRFLOW"
+      },
+      "dis": "VAV-202.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-202.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202",
+        "dis": "VAV-202"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202.AIRFLOW-SP",
+        "dis": "VAV-202.AIRFLOW-SP"
+      },
+      "dis": "VAV-202.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-202.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-202",
+        "dis": "VAV-202"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203.ZN-T",
+        "dis": "VAV-203.ZN-T"
+      },
+      "dis": "VAV-203.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-203.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203",
+        "dis": "VAV-203"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203.ZN-T-SP",
+        "dis": "VAV-203.ZN-T-SP"
+      },
+      "dis": "VAV-203.ZN-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-203.ZN-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203",
+        "dis": "VAV-203"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203.DMPR-C",
+        "dis": "VAV-203.DMPR-C"
+      },
+      "dis": "VAV-203.DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-203.DPR-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203",
+        "dis": "VAV-203"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203.AIRFLOW",
+        "dis": "VAV-203.AIRFLOW"
+      },
+      "dis": "VAV-203.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-203.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203",
+        "dis": "VAV-203"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203.AIRFLOW-SP",
+        "dis": "VAV-203.AIRFLOW-SP"
+      },
+      "dis": "VAV-203.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-203.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203",
+        "dis": "VAV-203"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203.DA-T",
+        "dis": "VAV-203.DA-T"
+      },
+      "dis": "VAV-203.DA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-203.DA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-203",
+        "dis": "VAV-203"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204.ZN-T",
+        "dis": "VAV-204.ZN-T"
+      },
+      "dis": "VAV-204.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-204.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204",
+        "dis": "VAV-204"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204.ZN-T-SP",
+        "dis": "VAV-204.ZN-T-SP"
+      },
+      "dis": "VAV-204.ZN-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-204.ZN-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204",
+        "dis": "VAV-204"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204.AIRFLOW",
+        "dis": "VAV-204.AIRFLOW"
+      },
+      "dis": "VAV-204.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-204.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204",
+        "dis": "VAV-204"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204.AIRFLOW-SP",
+        "dis": "VAV-204.AIRFLOW-SP"
+      },
+      "dis": "VAV-204.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-204.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204",
+        "dis": "VAV-204"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204.DA-T",
+        "dis": "VAV-204.DA-T"
+      },
+      "dis": "VAV-204.DA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-204.DA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-204",
+        "dis": "VAV-204"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205.ZN-T",
+        "dis": "VAV-205.ZN-T"
+      },
+      "dis": "VAV-205.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-205.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205",
+        "dis": "VAV-205"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205.DMPR-C",
+        "dis": "VAV-205.DMPR-C"
+      },
+      "dis": "VAV-205.DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-205.DPR-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205",
+        "dis": "VAV-205"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205.AIRFLOW",
+        "dis": "VAV-205.AIRFLOW"
+      },
+      "dis": "VAV-205.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-205.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205",
+        "dis": "VAV-205"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205.AIRFLOW-SP",
+        "dis": "VAV-205.AIRFLOW-SP"
+      },
+      "dis": "VAV-205.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-2.VMA-205.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-205",
+        "dis": "VAV-205"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301.ZN-T",
+        "dis": "VAV-301.ZN-T"
+      },
+      "dis": "VAV-301.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-301.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301",
+        "dis": "VAV-301"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301.ZN-T-SP",
+        "dis": "VAV-301.ZN-T-SP"
+      },
+      "dis": "VAV-301.ZN-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-301.ZN-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301",
+        "dis": "VAV-301"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301.DMPR-C",
+        "dis": "VAV-301.DMPR-C"
+      },
+      "dis": "VAV-301.DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-301.DPR-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301",
+        "dis": "VAV-301"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301.AIRFLOW",
+        "dis": "VAV-301.AIRFLOW"
+      },
+      "dis": "VAV-301.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-301.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301",
+        "dis": "VAV-301"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301.AIRFLOW-SP",
+        "dis": "VAV-301.AIRFLOW-SP"
+      },
+      "dis": "VAV-301.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-301.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-301",
+        "dis": "VAV-301"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302.ZN-T",
+        "dis": "VAV-302.ZN-T"
+      },
+      "dis": "VAV-302.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-302.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302",
+        "dis": "VAV-302"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302.ZN-T-SP",
+        "dis": "VAV-302.ZN-T-SP"
+      },
+      "dis": "VAV-302.ZN-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-302.ZN-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302",
+        "dis": "VAV-302"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302.DMPR-C",
+        "dis": "VAV-302.DMPR-C"
+      },
+      "dis": "VAV-302.DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-302.DPR-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302",
+        "dis": "VAV-302"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302.AIRFLOW",
+        "dis": "VAV-302.AIRFLOW"
+      },
+      "dis": "VAV-302.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-302.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302",
+        "dis": "VAV-302"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302.AIRFLOW-SP",
+        "dis": "VAV-302.AIRFLOW-SP"
+      },
+      "dis": "VAV-302.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-302.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-302",
+        "dis": "VAV-302"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303.ZN-T",
+        "dis": "VAV-303.ZN-T"
+      },
+      "dis": "VAV-303.ZN-T",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-303.ZN-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303",
+        "dis": "VAV-303"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303.ZN-T-SP",
+        "dis": "VAV-303.ZN-T-SP"
+      },
+      "dis": "VAV-303.ZN-T-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-303.ZN-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303",
+        "dis": "VAV-303"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303.DMPR-C",
+        "dis": "VAV-303.DMPR-C"
+      },
+      "dis": "VAV-303.DMPR-C",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-303.DPR-O",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303",
+        "dis": "VAV-303"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303.AIRFLOW",
+        "dis": "VAV-303.AIRFLOW"
+      },
+      "dis": "VAV-303.AIRFLOW",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-303.SA-FLOW",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303",
+        "dis": "VAV-303"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303.AIRFLOW-SP",
+        "dis": "VAV-303.AIRFLOW-SP"
+      },
+      "dis": "VAV-303.AIRFLOW-SP",
+      "pointmapSource": "OFFICE-A:NAE-01/FC-3.VMA-303.FLOW-SP",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A.VAV-303",
+        "dis": "VAV-303"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "flow": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "cfm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.OFFICE-A.OA-T",
+        "dis": "OFFICE-A.OA-T"
+      },
+      "dis": "OFFICE-A.OA-T",
+      "pointmapSource": "OFFICE-A:NAE-01/OA-T",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°F"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "OFFICE-A.OFFICE-A.OA-RH",
+        "dis": "OFFICE-A.OA-RH"
+      },
+      "dis": "OFFICE-A.OA-RH",
+      "pointmapSource": "OFFICE-A:NAE-01/OA-RH",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "OFFICE-A",
+        "dis": "OFFICE-A"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "humidity": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%RH"
+    }
+  ]
+}

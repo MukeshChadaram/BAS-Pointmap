@@ -1,0 +1,6 @@
+row,original_name,device_instance,object_type,units,equip_ref,best_guess,confidence,review_reason,flags
+7,#pine_paper/rtu_1/sf_status,1001,AI,A,RTU-01,SF-S,0.10,status point wired as an analog input reading amps (current transducer?). Confirm how proof is wired before mapping as SF-S,TYPE_MISMATCH: AI is unusual for SF-S (expected BI/BV) | UNITS_CONFLICT: A (current) but SF-S expects an on/off state | STATUS_ON_ANALOG: SF-S arrives as AI in A; check how proof is wired
+29,#pine_paper/rtu_2/filter_alarm,1002,BI,,RTU-02,,0.00,alarm point (not telemetry),
+31,#pine_paper/rtu_2/sat_test,1002,AV,°C,RTU-02,,0.00,test point,
+60,#pine_paper/site/dock_door_1,1000,BI,,,,0.00,"no recognizable tokens (DOCK, DOOR)",
+61,#pine_paper/site/lighting_zone_2,1000,BO,,,,0.00,no point role matches: position=zone,

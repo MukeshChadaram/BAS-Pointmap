@@ -1,0 +1,2192 @@
+{
+  "_kind": "grid",
+  "meta": {
+    "ver": "3.0"
+  },
+  "cols": [
+    {
+      "name": "id"
+    },
+    {
+      "name": "dis"
+    },
+    {
+      "name": "site"
+    },
+    {
+      "name": "siteRef"
+    },
+    {
+      "name": "equip"
+    },
+    {
+      "name": "ahu"
+    },
+    {
+      "name": "rtu"
+    },
+    {
+      "name": "heatingOnly"
+    },
+    {
+      "name": "fanPowered"
+    },
+    {
+      "name": "exhaust"
+    },
+    {
+      "name": "fan"
+    },
+    {
+      "name": "motor"
+    },
+    {
+      "name": "pointmapSource"
+    },
+    {
+      "name": "kind"
+    },
+    {
+      "name": "equipRef"
+    },
+    {
+      "name": "discharge"
+    },
+    {
+      "name": "air"
+    },
+    {
+      "name": "temp"
+    },
+    {
+      "name": "sensor"
+    },
+    {
+      "name": "point"
+    },
+    {
+      "name": "unit"
+    },
+    {
+      "name": "return"
+    },
+    {
+      "name": "mixed"
+    },
+    {
+      "name": "zone"
+    },
+    {
+      "name": "sp"
+    },
+    {
+      "name": "run"
+    },
+    {
+      "name": "cmd"
+    },
+    {
+      "name": "heat"
+    },
+    {
+      "name": "stage"
+    },
+    {
+      "name": "cool"
+    },
+    {
+      "name": "outside"
+    },
+    {
+      "name": "damper"
+    },
+    {
+      "name": "co2"
+    },
+    {
+      "name": "concentration"
+    },
+    {
+      "name": "occupied"
+    },
+    {
+      "name": "filter"
+    },
+    {
+      "name": "humidity"
+    }
+  ],
+  "rows": [
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "dis": "PINE-PAPER",
+      "site": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "dis": "RTU-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "ahu": {
+        "_kind": "marker"
+      },
+      "rtu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "dis": "RTU-02",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "ahu": {
+        "_kind": "marker"
+      },
+      "rtu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "dis": "RTU-03",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "ahu": {
+        "_kind": "marker"
+      },
+      "rtu": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01",
+        "dis": "UH-01"
+      },
+      "dis": "UH-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "heatingOnly": {
+        "_kind": "marker"
+      },
+      "fanPowered": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02",
+        "dis": "UH-02"
+      },
+      "dis": "UH-02",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "heatingOnly": {
+        "_kind": "marker"
+      },
+      "fanPowered": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.EF-01",
+        "dis": "EF-01"
+      },
+      "dis": "EF-01",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equip": {
+        "_kind": "marker"
+      },
+      "exhaust": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "motor": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.DA-T",
+        "dis": "RTU-01.DA-T"
+      },
+      "dis": "RTU-01.DA-T",
+      "pointmapSource": "#pine_paper/rtu_1/da_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.RA-T",
+        "dis": "RTU-01.RA-T"
+      },
+      "dis": "RTU-01.RA-T",
+      "pointmapSource": "#pine_paper/rtu_1/ra_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.MA-T",
+        "dis": "RTU-01.MA-T"
+      },
+      "dis": "RTU-01.MA-T",
+      "pointmapSource": "#pine_paper/rtu_1/ma_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "mixed": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.ZN-T",
+        "dis": "RTU-01.ZN-T"
+      },
+      "dis": "RTU-01.ZN-T",
+      "pointmapSource": "#pine_paper/rtu_1/zone_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.ZN-T-SP",
+        "dis": "RTU-01.ZN-T-SP"
+      },
+      "dis": "RTU-01.ZN-T-SP",
+      "pointmapSource": "#pine_paper/rtu_1/zone_temp_stpt",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.SF-C",
+        "dis": "RTU-01.SF-C"
+      },
+      "dis": "RTU-01.SF-C",
+      "pointmapSource": "#pine_paper/rtu_1/sf_ss",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.HTG-STG1-C",
+        "dis": "RTU-01.HTG-STG1-C"
+      },
+      "dis": "RTU-01.HTG-STG1-C",
+      "pointmapSource": "#pine_paper/rtu_1/htg_stg_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.HTG-STG2-C",
+        "dis": "RTU-01.HTG-STG2-C"
+      },
+      "dis": "RTU-01.HTG-STG2-C",
+      "pointmapSource": "#pine_paper/rtu_1/htg_stg_2",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 2
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.CLG-STG1-C",
+        "dis": "RTU-01.CLG-STG1-C"
+      },
+      "dis": "RTU-01.CLG-STG1-C",
+      "pointmapSource": "#pine_paper/rtu_1/clg_stg_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "cool": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.CLG-STG2-C",
+        "dis": "RTU-01.CLG-STG2-C"
+      },
+      "dis": "RTU-01.CLG-STG2-C",
+      "pointmapSource": "#pine_paper/rtu_1/clg_stg_2",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "cool": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 2
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.OA-DMPR-C",
+        "dis": "RTU-01.OA-DMPR-C"
+      },
+      "dis": "RTU-01.OA-DMPR-C",
+      "pointmapSource": "#pine_paper/rtu_1/oa_dmpr_pos",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.RA-CO2",
+        "dis": "RTU-01.RA-CO2"
+      },
+      "dis": "RTU-01.RA-CO2",
+      "pointmapSource": "#pine_paper/rtu_1/ra_co2",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "co2": {
+        "_kind": "marker"
+      },
+      "concentration": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "ppm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01.OCC-MODE",
+        "dis": "RTU-01.OCC-MODE"
+      },
+      "dis": "RTU-01.OCC-MODE",
+      "pointmapSource": "#pine_paper/rtu_1/occ_mode",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-01",
+        "dis": "RTU-01"
+      },
+      "occupied": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.DA-T",
+        "dis": "RTU-02.DA-T"
+      },
+      "dis": "RTU-02.DA-T",
+      "pointmapSource": "#pine_paper/rtu_2/da_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.RA-T",
+        "dis": "RTU-02.RA-T"
+      },
+      "dis": "RTU-02.RA-T",
+      "pointmapSource": "#pine_paper/rtu_2/ra_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.MA-T",
+        "dis": "RTU-02.MA-T"
+      },
+      "dis": "RTU-02.MA-T",
+      "pointmapSource": "#pine_paper/rtu_2/ma_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "mixed": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.ZN-T",
+        "dis": "RTU-02.ZN-T"
+      },
+      "dis": "RTU-02.ZN-T",
+      "pointmapSource": "#pine_paper/rtu_2/zone_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.ZN-T-SP",
+        "dis": "RTU-02.ZN-T-SP"
+      },
+      "dis": "RTU-02.ZN-T-SP",
+      "pointmapSource": "#pine_paper/rtu_2/zone_temp_stpt",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.SF-C",
+        "dis": "RTU-02.SF-C"
+      },
+      "dis": "RTU-02.SF-C",
+      "pointmapSource": "#pine_paper/rtu_2/sf_ss",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.SF-S",
+        "dis": "RTU-02.SF-S"
+      },
+      "dis": "RTU-02.SF-S",
+      "pointmapSource": "#pine_paper/rtu_2/sf_status",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.HTG-STG1-C",
+        "dis": "RTU-02.HTG-STG1-C"
+      },
+      "dis": "RTU-02.HTG-STG1-C",
+      "pointmapSource": "#pine_paper/rtu_2/htg_stg_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.HTG-STG2-C",
+        "dis": "RTU-02.HTG-STG2-C"
+      },
+      "dis": "RTU-02.HTG-STG2-C",
+      "pointmapSource": "#pine_paper/rtu_2/htg_stg_2",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 2
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.CLG-STG1-C",
+        "dis": "RTU-02.CLG-STG1-C"
+      },
+      "dis": "RTU-02.CLG-STG1-C",
+      "pointmapSource": "#pine_paper/rtu_2/clg_stg_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "cool": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.CLG-STG2-C",
+        "dis": "RTU-02.CLG-STG2-C"
+      },
+      "dis": "RTU-02.CLG-STG2-C",
+      "pointmapSource": "#pine_paper/rtu_2/clg_stg_2",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "cool": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 2
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.OA-DMPR-C",
+        "dis": "RTU-02.OA-DMPR-C"
+      },
+      "dis": "RTU-02.OA-DMPR-C",
+      "pointmapSource": "#pine_paper/rtu_2/oa_dmpr_pos",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.RA-CO2",
+        "dis": "RTU-02.RA-CO2"
+      },
+      "dis": "RTU-02.RA-CO2",
+      "pointmapSource": "#pine_paper/rtu_2/ra_co2",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "co2": {
+        "_kind": "marker"
+      },
+      "concentration": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "ppm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.OCC-MODE",
+        "dis": "RTU-02.OCC-MODE"
+      },
+      "dis": "RTU-02.OCC-MODE",
+      "pointmapSource": "#pine_paper/rtu_2/occ_mode",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "occupied": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02.DA-T-SP",
+        "dis": "RTU-02.DA-T-SP"
+      },
+      "dis": "RTU-02.DA-T-SP",
+      "pointmapSource": "#pine_paper/rtu_2/da_temp_stpt",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-02",
+        "dis": "RTU-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.DA-T",
+        "dis": "RTU-03.DA-T"
+      },
+      "dis": "RTU-03.DA-T",
+      "pointmapSource": "#pine_paper/rtu_3/da_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.RA-T",
+        "dis": "RTU-03.RA-T"
+      },
+      "dis": "RTU-03.RA-T",
+      "pointmapSource": "#pine_paper/rtu_3/ra_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.MA-T",
+        "dis": "RTU-03.MA-T"
+      },
+      "dis": "RTU-03.MA-T",
+      "pointmapSource": "#pine_paper/rtu_3/ma_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "mixed": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.ZN-T",
+        "dis": "RTU-03.ZN-T"
+      },
+      "dis": "RTU-03.ZN-T",
+      "pointmapSource": "#pine_paper/rtu_3/zone_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.ZN-T-SP",
+        "dis": "RTU-03.ZN-T-SP"
+      },
+      "dis": "RTU-03.ZN-T-SP",
+      "pointmapSource": "#pine_paper/rtu_3/zone_temp_stpt",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.SF-C",
+        "dis": "RTU-03.SF-C"
+      },
+      "dis": "RTU-03.SF-C",
+      "pointmapSource": "#pine_paper/rtu_3/sf_ss",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.SF-S",
+        "dis": "RTU-03.SF-S"
+      },
+      "dis": "RTU-03.SF-S",
+      "pointmapSource": "#pine_paper/rtu_3/sf_status",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.HTG-STG1-C",
+        "dis": "RTU-03.HTG-STG1-C"
+      },
+      "dis": "RTU-03.HTG-STG1-C",
+      "pointmapSource": "#pine_paper/rtu_3/htg_stg_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.HTG-STG2-C",
+        "dis": "RTU-03.HTG-STG2-C"
+      },
+      "dis": "RTU-03.HTG-STG2-C",
+      "pointmapSource": "#pine_paper/rtu_3/htg_stg_2",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 2
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.CLG-STG1-C",
+        "dis": "RTU-03.CLG-STG1-C"
+      },
+      "dis": "RTU-03.CLG-STG1-C",
+      "pointmapSource": "#pine_paper/rtu_3/clg_stg_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "cool": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.CLG-STG2-C",
+        "dis": "RTU-03.CLG-STG2-C"
+      },
+      "dis": "RTU-03.CLG-STG2-C",
+      "pointmapSource": "#pine_paper/rtu_3/clg_stg_2",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "cool": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 2
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.OA-DMPR-C",
+        "dis": "RTU-03.OA-DMPR-C"
+      },
+      "dis": "RTU-03.OA-DMPR-C",
+      "pointmapSource": "#pine_paper/rtu_3/oa_dmpr_pos",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "damper": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.RA-CO2",
+        "dis": "RTU-03.RA-CO2"
+      },
+      "dis": "RTU-03.RA-CO2",
+      "pointmapSource": "#pine_paper/rtu_3/ra_co2",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "return": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "co2": {
+        "_kind": "marker"
+      },
+      "concentration": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "ppm"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.OCC-MODE",
+        "dis": "RTU-03.OCC-MODE"
+      },
+      "dis": "RTU-03.OCC-MODE",
+      "pointmapSource": "#pine_paper/rtu_3/occ_mode",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "occupied": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03.FLTR-S",
+        "dis": "RTU-03.FLTR-S"
+      },
+      "dis": "RTU-03.FLTR-S",
+      "pointmapSource": "#pine_paper/rtu_3/filter_status",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.RTU-03",
+        "dis": "RTU-03"
+      },
+      "filter": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01.ZN-T",
+        "dis": "UH-01.ZN-T"
+      },
+      "dis": "UH-01.ZN-T",
+      "pointmapSource": "#pine_paper/uh_1/zone_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01",
+        "dis": "UH-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01.ZN-T-SP",
+        "dis": "UH-01.ZN-T-SP"
+      },
+      "dis": "UH-01.ZN-T-SP",
+      "pointmapSource": "#pine_paper/uh_1/zone_temp_stpt",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01",
+        "dis": "UH-01"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01.SF-C",
+        "dis": "UH-01.SF-C"
+      },
+      "dis": "UH-01.SF-C",
+      "pointmapSource": "#pine_paper/uh_1/fan_ss",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01",
+        "dis": "UH-01"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01.HTG-STG1-C",
+        "dis": "UH-01.HTG-STG1-C"
+      },
+      "dis": "UH-01.HTG-STG1-C",
+      "pointmapSource": "#pine_paper/uh_1/heat_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-01",
+        "dis": "UH-01"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02.ZN-T",
+        "dis": "UH-02.ZN-T"
+      },
+      "dis": "UH-02.ZN-T",
+      "pointmapSource": "#pine_paper/uh_2/zone_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02",
+        "dis": "UH-02"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02.ZN-T-SP",
+        "dis": "UH-02.ZN-T-SP"
+      },
+      "dis": "UH-02.ZN-T-SP",
+      "pointmapSource": "#pine_paper/uh_2/zone_temp_stpt",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02",
+        "dis": "UH-02"
+      },
+      "zone": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sp": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02.SF-C",
+        "dis": "UH-02.SF-C"
+      },
+      "dis": "UH-02.SF-C",
+      "pointmapSource": "#pine_paper/uh_2/fan_ss",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02",
+        "dis": "UH-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02.HTG-STG1-C",
+        "dis": "UH-02.HTG-STG1-C"
+      },
+      "dis": "UH-02.HTG-STG1-C",
+      "pointmapSource": "#pine_paper/uh_2/heat_1",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02",
+        "dis": "UH-02"
+      },
+      "heat": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "stage": 1
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02.SF-S",
+        "dis": "UH-02.SF-S"
+      },
+      "dis": "UH-02.SF-S",
+      "pointmapSource": "#pine_paper/uh_2/fan_status",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.UH-02",
+        "dis": "UH-02"
+      },
+      "discharge": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.EF-01.EF-C",
+        "dis": "EF-01.EF-C"
+      },
+      "dis": "EF-01.EF-C",
+      "pointmapSource": "#pine_paper/ef_1/ef_ss",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.EF-01",
+        "dis": "EF-01"
+      },
+      "exhaust": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "cmd": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.EF-01.EF-S",
+        "dis": "EF-01.EF-S"
+      },
+      "dis": "EF-01.EF-S",
+      "pointmapSource": "#pine_paper/ef_1/ef_status",
+      "kind": "Bool",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "equipRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.EF-01",
+        "dis": "EF-01"
+      },
+      "exhaust": {
+        "_kind": "marker"
+      },
+      "fan": {
+        "_kind": "marker"
+      },
+      "run": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      }
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.PINE-PAPER.OA-T",
+        "dis": "PINE-PAPER.OA-T"
+      },
+      "dis": "PINE-PAPER.OA-T",
+      "pointmapSource": "#pine_paper/site/oa_temp",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "temp": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "°C"
+    },
+    {
+      "id": {
+        "_kind": "ref",
+        "val": "PINE-PAPER.PINE-PAPER.OA-RH",
+        "dis": "PINE-PAPER.OA-RH"
+      },
+      "dis": "PINE-PAPER.OA-RH",
+      "pointmapSource": "#pine_paper/site/oa_humidity",
+      "kind": "Number",
+      "siteRef": {
+        "_kind": "ref",
+        "val": "PINE-PAPER",
+        "dis": "PINE-PAPER"
+      },
+      "outside": {
+        "_kind": "marker"
+      },
+      "air": {
+        "_kind": "marker"
+      },
+      "humidity": {
+        "_kind": "marker"
+      },
+      "sensor": {
+        "_kind": "marker"
+      },
+      "point": {
+        "_kind": "marker"
+      },
+      "unit": "%RH"
+    }
+  ]
+}

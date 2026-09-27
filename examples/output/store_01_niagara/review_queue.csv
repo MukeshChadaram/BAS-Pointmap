@@ -1,0 +1,5 @@
+row,original_name,device_instance,object_type,units,equip_ref,best_guess,confidence,review_reason,flags
+13,/Drivers/BacnetNetwork/RTU_1/points/EffClgSp,4001,AV,°F,RTU-01,,0.00,"no point role matches: mode=cooling,function=sp | mode=cooling,quantity=pressure",
+26,/Drivers/BacnetNetwork/RTU_2/points/CommStatus,4002,BV,,RTU-02,,0.00,communication diagnostic,
+29,/Drivers/BacnetNetwork/RTU_3/points/Spacetemp,4003,AI,°F,RTU-03,,0.00,no recognizable tokens (SPACETEMP),
+56,/Drivers/BacnetNetwork/LightingPanel/points/Zone3Relay,4020,BO,,,,0.00,no point role matches: position=zone,

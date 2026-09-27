@@ -1,0 +1,9 @@
+row,original_name,device_instance,object_type,units,equip_ref,best_guess,confidence,review_reason,flags
+14,OFFICE-A:NAE-01/FC-1.AHU-1.FLTR-DP,2001,AI,inH₂O,AHU-01,,0.00,no point role matches: subject=filter,
+15,OFFICE-A:NAE-01/FC-1.AHU-1.SA-T-ALM,2001,BV,,AHU-01,,0.00,alarm point (not telemetry),
+22,OFFICE-A:NAE-01/FC-1.AHU-2.SF-O,2002,AO,%,AHU-02,SF-C,0.10,best guess SF-C (0.10) but metadata disagrees: AO is unusual for SF-C (expected BO/BV); % (percent) but SF-C expects an on/off state,TYPE_MISMATCH: AO is unusual for SF-C (expected BO/BV) | UNITS_CONFLICT: % (percent) but SF-C expects an on/off state
+29,OFFICE-A:NAE-01/FC-2.VMA-201.HTG-O,2201,AO,%,VAV-201,,0.00,"no point role matches: mode=heating,function=cmd",
+35,OFFICE-A:NAE-01/FC-2.VMA-202.HTG-O,2202,AO,%,VAV-202,,0.00,"no point role matches: mode=heating,function=cmd",
+48,OFFICE-A:NAE-01/FC-2.VMA-205.ZN-SP,2205,AV,,VAV-205,,0.00,"no point role matches: position=zone,function=sp | position=zone,quantity=pressure",
+57,OFFICE-A:NAE-01/FC-3.VMA-301.HTG-O,2301,AO,%,VAV-301,,0.00,"no point role matches: mode=heating,function=cmd",
+70,OFFICE-A:NAE-01/FC-2.ZN-T,2200,AI,°F,,ZN-T,0.85,no equipment in the name: best guess ZN-T (0.85); assign equipment from the device list or drawings,NO_EQUIPMENT: point could not be attached to equipment

@@ -1,0 +1,282 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix bldg: <urn:pointmap:PINE-PAPER#> .
+
+bldg:PINE-PAPER a brick:Building ;
+    rdfs:label "PINE-PAPER" .
+
+bldg:RTU-01 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-01" ;
+    brick:hasLocation bldg:PINE-PAPER .
+
+bldg:RTU-02 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-02" ;
+    brick:hasLocation bldg:PINE-PAPER .
+
+bldg:RTU-03 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-03" ;
+    brick:hasLocation bldg:PINE-PAPER .
+
+bldg:UH-01 a brick:Space_Heater ;
+    rdfs:label "UH-01" ;
+    brick:hasLocation bldg:PINE-PAPER .
+
+bldg:UH-02 a brick:Space_Heater ;
+    rdfs:label "UH-02" ;
+    brick:hasLocation bldg:PINE-PAPER .
+
+bldg:EF-01 a brick:Exhaust_Fan ;
+    rdfs:label "EF-01" ;
+    brick:hasLocation bldg:PINE-PAPER .
+
+bldg:RTU-01.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_1/da_temp" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-01.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_1/ra_temp" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-01.MA-T a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_1/ma_temp" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-01.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_1/zone_temp" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-01.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "#pine_paper/rtu_1/zone_temp_stpt" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-01.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "#pine_paper/rtu_1/sf_ss" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/rtu_1/htg_stg_1" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.HTG-STG2-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/rtu_1/htg_stg_2" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "#pine_paper/rtu_1/clg_stg_1" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.CLG-STG2-C a brick:Cooling_Command ;
+    rdfs:label "#pine_paper/rtu_1/clg_stg_2" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.OA-DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "#pine_paper/rtu_1/oa_dmpr_pos" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-01.RA-CO2 a brick:Return_Air_CO2_Sensor ;
+    rdfs:label "#pine_paper/rtu_1/ra_co2" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:PPM .
+
+bldg:RTU-01.OCC-MODE a brick:Occupancy_Status ;
+    rdfs:label "#pine_paper/rtu_1/occ_mode" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-02.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_2/da_temp" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-02.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_2/ra_temp" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-02.MA-T a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_2/ma_temp" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-02.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_2/zone_temp" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-02.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "#pine_paper/rtu_2/zone_temp_stpt" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-02.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "#pine_paper/rtu_2/sf_ss" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.SF-S a brick:Fan_Status ;
+    rdfs:label "#pine_paper/rtu_2/sf_status" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/rtu_2/htg_stg_1" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.HTG-STG2-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/rtu_2/htg_stg_2" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "#pine_paper/rtu_2/clg_stg_1" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.CLG-STG2-C a brick:Cooling_Command ;
+    rdfs:label "#pine_paper/rtu_2/clg_stg_2" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.OA-DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "#pine_paper/rtu_2/oa_dmpr_pos" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-02.RA-CO2 a brick:Return_Air_CO2_Sensor ;
+    rdfs:label "#pine_paper/rtu_2/ra_co2" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:PPM .
+
+bldg:RTU-02.OCC-MODE a brick:Occupancy_Status ;
+    rdfs:label "#pine_paper/rtu_2/occ_mode" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.DA-T-SP a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label "#pine_paper/rtu_2/da_temp_stpt" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-03.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_3/da_temp" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-03.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_3/ra_temp" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-03.MA-T a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_3/ma_temp" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-03.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/rtu_3/zone_temp" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "#pine_paper/rtu_3/zone_temp_stpt" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:RTU-03.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "#pine_paper/rtu_3/sf_ss" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.SF-S a brick:Fan_Status ;
+    rdfs:label "#pine_paper/rtu_3/sf_status" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/rtu_3/htg_stg_1" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.HTG-STG2-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/rtu_3/htg_stg_2" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "#pine_paper/rtu_3/clg_stg_1" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.CLG-STG2-C a brick:Cooling_Command ;
+    rdfs:label "#pine_paper/rtu_3/clg_stg_2" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.OA-DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "#pine_paper/rtu_3/oa_dmpr_pos" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-03.RA-CO2 a brick:Return_Air_CO2_Sensor ;
+    rdfs:label "#pine_paper/rtu_3/ra_co2" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:PPM .
+
+bldg:RTU-03.OCC-MODE a brick:Occupancy_Status ;
+    rdfs:label "#pine_paper/rtu_3/occ_mode" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.FLTR-S a brick:Filter_Status ;
+    rdfs:label "#pine_paper/rtu_3/filter_status" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:UH-01.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/uh_1/zone_temp" ;
+    brick:isPointOf bldg:UH-01 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:UH-01.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "#pine_paper/uh_1/zone_temp_stpt" ;
+    brick:isPointOf bldg:UH-01 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:UH-01.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "#pine_paper/uh_1/fan_ss" ;
+    brick:isPointOf bldg:UH-01 .
+
+bldg:UH-01.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/uh_1/heat_1" ;
+    brick:isPointOf bldg:UH-01 .
+
+bldg:UH-02.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/uh_2/zone_temp" ;
+    brick:isPointOf bldg:UH-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:UH-02.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "#pine_paper/uh_2/zone_temp_stpt" ;
+    brick:isPointOf bldg:UH-02 ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:UH-02.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "#pine_paper/uh_2/fan_ss" ;
+    brick:isPointOf bldg:UH-02 .
+
+bldg:UH-02.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "#pine_paper/uh_2/heat_1" ;
+    brick:isPointOf bldg:UH-02 .
+
+bldg:UH-02.SF-S a brick:Fan_Status ;
+    rdfs:label "#pine_paper/uh_2/fan_status" ;
+    brick:isPointOf bldg:UH-02 .
+
+bldg:EF-01.EF-C a brick:Start_Stop_Command ;
+    rdfs:label "#pine_paper/ef_1/ef_ss" ;
+    brick:isPointOf bldg:EF-01 .
+
+bldg:EF-01.EF-S a brick:Fan_Status ;
+    rdfs:label "#pine_paper/ef_1/ef_status" ;
+    brick:isPointOf bldg:EF-01 .
+
+bldg:PINE-PAPER.OA-T a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label "#pine_paper/site/oa_temp" ;
+    brick:isPointOf bldg:PINE-PAPER ;
+    brick:hasUnit unit:DEG_C .
+
+bldg:PINE-PAPER.OA-RH a brick:Outside_Air_Humidity_Sensor ;
+    rdfs:label "#pine_paper/site/oa_humidity" ;
+    brick:isPointOf bldg:PINE-PAPER ;
+    brick:hasUnit unit:PERCENT_RH .

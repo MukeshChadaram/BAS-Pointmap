@@ -76,7 +76,7 @@ Operating procedure for a real onboarding: [docs/RUNBOOK.md](docs/RUNBOOK.md).
 ### Quick start
 
 ```bash
-git clone https://github.com/<your-github>/bas-pointmap.git && cd bas-pointmap
+git clone https://github.com/MukeshChadaram/BAS-Pointmap.git && cd BAS-Pointmap
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 

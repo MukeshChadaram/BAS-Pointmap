@@ -1,0 +1,254 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix bldg: <urn:pointmap:LEGACY-MIX#> .
+
+bldg:LEGACY-MIX a brick:Building ;
+    rdfs:label "LEGACY-MIX" .
+
+bldg:RTU-01 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-01" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:AHU-01 a brick:Air_Handling_Unit ;
+    rdfs:label "AHU-01" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:VAV-2-01 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV-2-01" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:VAV-2-02 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV-2-02" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:VAV-2-03 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV-2-03" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:VAV-2-04 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV-2-04" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:EF-02 a brick:Exhaust_Fan ;
+    rdfs:label "EF-02" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:UH-03 a brick:Space_Heater ;
+    rdfs:label "UH-03" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:BB-01 a brick:Baseboard_Radiator ;
+    rdfs:label "BB-01" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:FCU-01 a brick:Fan_Coil_Unit ;
+    rdfs:label "FCU-01" ;
+    brick:hasLocation bldg:LEGACY-MIX .
+
+bldg:RTU-01.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "Rtu #1 Disch Air Tmp" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.DA-T_2 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "RTU1-DAT" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-01.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "RTU1-RAT" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-01.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "RTU1 ZN TEMPATURE" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-01.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "RTU1 SF S/S" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.SF-S a brick:Fan_Status ;
+    rdfs:label "RTU1 SF STATUS" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "RTU1 HEAT 1" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "RTU1 COOL 1" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.DA-T_3 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "RTU1 DAT HI LIMIT" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:AHU-01.MA-T a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label "AHU1 MAT" ;
+    brick:isPointOf bldg:AHU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:AHU-01.MA-T_2 a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label "AHU1 MAT" ;
+    brick:isPointOf bldg:AHU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:AHU-01.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "AHU1 SAT" ;
+    brick:isPointOf bldg:AHU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:AHU-01.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "AHU1 RAT" ;
+    brick:isPointOf bldg:AHU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:AHU-01.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "AHU1 SUPPLY FAN CMD" ;
+    brick:isPointOf bldg:AHU-01 .
+
+bldg:AHU-01.SF-S a brick:Fan_Status ;
+    rdfs:label "AHU1 SUPPLY FAN STATUS" ;
+    brick:isPointOf bldg:AHU-01 .
+
+bldg:AHU-01.OA-DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "AHU1 OA DAMPER" ;
+    brick:isPointOf bldg:AHU-01 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:AHU-01.FLTR-S a brick:Filter_Status ;
+    rdfs:label "AHU1 FILTER STATUS" ;
+    brick:isPointOf bldg:AHU-01 .
+
+bldg:VAV-2-01.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "vav2-01_ZN_TEMP_DegF" ;
+    brick:isPointOf bldg:VAV-2-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-01.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "vav2-01_ZN_SETPT" ;
+    brick:isPointOf bldg:VAV-2-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-01.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "vav2-01_DMPR_CMD" ;
+    brick:isPointOf bldg:VAV-2-01 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:VAV-2-01.AIRFLOW a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label "vav2-01_AIRFLOW" ;
+    brick:isPointOf bldg:VAV-2-01 ;
+    brick:hasUnit unit:FT3-PER-MIN .
+
+bldg:VAV-2-02.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "vav2-02_ZN_TEMP_DegF" ;
+    brick:isPointOf bldg:VAV-2-02 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-02.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "vav2-02_ZN_SETPT" ;
+    brick:isPointOf bldg:VAV-2-02 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-02.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "vav2-02_DMPR_CMD" ;
+    brick:isPointOf bldg:VAV-2-02 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:VAV-2-02.AIRFLOW a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label "vav2-02_AIRFLOW" ;
+    brick:isPointOf bldg:VAV-2-02 ;
+    brick:hasUnit unit:FT3-PER-MIN .
+
+bldg:VAV-2-02.RHT-VLV-C a brick:Valve_Position_Command ;
+    rdfs:label "vav2-02_RHT_VLV" ;
+    brick:isPointOf bldg:VAV-2-02 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:VAV-2-03.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "vav2-03_ZN_TEMP_DegF" ;
+    brick:isPointOf bldg:VAV-2-03 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-03.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "vav2-03_ZN_SETPT" ;
+    brick:isPointOf bldg:VAV-2-03 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-03.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "vav2-03_DMPR_CMD" ;
+    brick:isPointOf bldg:VAV-2-03 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:VAV-2-03.AIRFLOW a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label "vav2-03_AIRFLOW" ;
+    brick:isPointOf bldg:VAV-2-03 ;
+    brick:hasUnit unit:FT3-PER-MIN .
+
+bldg:VAV-2-04.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "vav2-04_ZN_TEMP_DegF" ;
+    brick:isPointOf bldg:VAV-2-04 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-04.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "vav2-04_ZN_SETPT" ;
+    brick:isPointOf bldg:VAV-2-04 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:VAV-2-04.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "vav2-04_DMPR_CMD" ;
+    brick:isPointOf bldg:VAV-2-04 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:VAV-2-04.AIRFLOW a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label "vav2-04_AIRFLOW" ;
+    brick:isPointOf bldg:VAV-2-04 .
+
+bldg:EF-02.EF-C a brick:Start_Stop_Command ;
+    rdfs:label "EF-2 S/S" ;
+    brick:isPointOf bldg:EF-02 .
+
+bldg:EF-02.EF-S a brick:Fan_Status ;
+    rdfs:label "EF-2 STATUS" ;
+    brick:isPointOf bldg:EF-02 .
+
+bldg:UH-03.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "UH-3 FAN" ;
+    brick:isPointOf bldg:UH-03 .
+
+bldg:UH-03.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "UH-3 RM TEMP" ;
+    brick:isPointOf bldg:UH-03 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:BB-01.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "BB-1 RM TEMP" ;
+    brick:isPointOf bldg:BB-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:BB-01.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "BB-1 RM TEMP SP" ;
+    brick:isPointOf bldg:BB-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:FCU-01.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "FCU-1 ZN-T" ;
+    brick:isPointOf bldg:FCU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:FCU-01.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "FCU-1 FAN SS" ;
+    brick:isPointOf bldg:FCU-01 .
+
+bldg:LEGACY-MIX.OA-T a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label "OAT" ;
+    brick:isPointOf bldg:LEGACY-MIX ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:LEGACY-MIX.OA-RH a brick:Outside_Air_Humidity_Sensor ;
+    rdfs:label "OA HUMIDITY" ;
+    brick:isPointOf bldg:LEGACY-MIX ;
+    brick:hasUnit unit:PERCENT_RH .

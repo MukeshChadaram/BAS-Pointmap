@@ -1,0 +1,259 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix bldg: <urn:pointmap:STORE-01#> .
+
+bldg:STORE-01 a brick:Building ;
+    rdfs:label "STORE-01" .
+
+bldg:RTU-01 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-01" ;
+    brick:hasLocation bldg:STORE-01 .
+
+bldg:RTU-02 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-02" ;
+    brick:hasLocation bldg:STORE-01 .
+
+bldg:RTU-03 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-03" ;
+    brick:hasLocation bldg:STORE-01 .
+
+bldg:RTU-04 a brick:Rooftop_Unit ;
+    rdfs:label "RTU-04" ;
+    brick:hasLocation bldg:STORE-01 .
+
+bldg:EF-01 a brick:Exhaust_Fan ;
+    rdfs:label "EF-01" ;
+    brick:hasLocation bldg:STORE-01 .
+
+bldg:RTU-01.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/DAT" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-01.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/RAT" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-01.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/SpaceTemp" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-01.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/SpaceTempSp" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-01.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/SupFanCmd" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.SF-S a brick:Fan_Status ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/SupFanSts" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/HtgStg1" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.HTG-STG2-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/HtgStg2" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/ClgStg1" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.CLG-STG2-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/ClgStg2" ;
+    brick:isPointOf bldg:RTU-01 .
+
+bldg:RTU-01.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/EconDmprPos" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-01.RA-CO2 a brick:Return_Air_CO2_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_1/points/RaCO2" ;
+    brick:isPointOf bldg:RTU-01 ;
+    brick:hasUnit unit:PPM .
+
+bldg:RTU-02.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/DAT" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-02.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/RAT" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-02.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/SpaceTemp" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-02.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/SpaceTempSp" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-02.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/SupFanCmd" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.SF-S a brick:Fan_Status ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/SupFanSts" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/HtgStg1" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.HTG-STG2-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/HtgStg2" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/ClgStg1" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.CLG-STG2-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/ClgStg2" ;
+    brick:isPointOf bldg:RTU-02 .
+
+bldg:RTU-02.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/EconDmprPos" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-02.RA-CO2 a brick:Return_Air_CO2_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_2/points/RaCO2" ;
+    brick:isPointOf bldg:RTU-02 ;
+    brick:hasUnit unit:PPM .
+
+bldg:RTU-03.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/DAT" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-03.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/RAT" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-03.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/SpaceTempSp" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-03.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/SupFanCmd" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.SF-S a brick:Fan_Status ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/SupFanSts" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/HtgStg1" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.HTG-STG2-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/HtgStg2" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/ClgStg1" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.CLG-STG2-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/ClgStg2" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-03.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/EconDmprPos" ;
+    brick:isPointOf bldg:RTU-03 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-03.FLTR-S a brick:Filter_Status ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_3/points/FilterSts" ;
+    brick:isPointOf bldg:RTU-03 .
+
+bldg:RTU-04.DA-T a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/DAT" ;
+    brick:isPointOf bldg:RTU-04 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-04.RA-T a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/RAT" ;
+    brick:isPointOf bldg:RTU-04 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-04.ZN-T a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/SpaceTemp" ;
+    brick:isPointOf bldg:RTU-04 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-04.ZN-T-SP a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/SpaceTempSp" ;
+    brick:isPointOf bldg:RTU-04 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:RTU-04.SF-C a brick:Start_Stop_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/SupFanCmd" ;
+    brick:isPointOf bldg:RTU-04 .
+
+bldg:RTU-04.SF-S a brick:Fan_Status ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/SupFanSts" ;
+    brick:isPointOf bldg:RTU-04 .
+
+bldg:RTU-04.HTG-STG1-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/HtgStg1" ;
+    brick:isPointOf bldg:RTU-04 .
+
+bldg:RTU-04.HTG-STG2-C a brick:Heating_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/HtgStg2" ;
+    brick:isPointOf bldg:RTU-04 .
+
+bldg:RTU-04.CLG-STG1-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/ClgStg1" ;
+    brick:isPointOf bldg:RTU-04 .
+
+bldg:RTU-04.CLG-STG2-C a brick:Cooling_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/ClgStg2" ;
+    brick:isPointOf bldg:RTU-04 .
+
+bldg:RTU-04.DMPR-C a brick:Damper_Position_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/EconDmprPos" ;
+    brick:isPointOf bldg:RTU-04 ;
+    brick:hasUnit unit:PERCENT .
+
+bldg:RTU-04.FLTR-S a brick:Filter_Status ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4/points/FilterSts" ;
+    brick:isPointOf bldg:RTU-04 .
+
+bldg:RTU-04.DA-T_2 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/RTU_4_old/points/DAT" ;
+    brick:isPointOf bldg:RTU-04 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:EF-01.EF-C a brick:Start_Stop_Command ;
+    rdfs:label "/Drivers/BacnetNetwork/EF_1/points/Cmd" ;
+    brick:isPointOf bldg:EF-01 .
+
+bldg:EF-01.EF-S a brick:Fan_Status ;
+    rdfs:label "/Drivers/BacnetNetwork/EF_1/points/Sts" ;
+    brick:isPointOf bldg:EF-01 .
+
+bldg:STORE-01.OA-T a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/Weather/points/OutdoorTemp" ;
+    brick:isPointOf bldg:STORE-01 ;
+    brick:hasUnit unit:DEG_F .
+
+bldg:STORE-01.OA-RH a brick:Outside_Air_Humidity_Sensor ;
+    rdfs:label "/Drivers/BacnetNetwork/Weather/points/OutdoorHumidity" ;
+    brick:isPointOf bldg:STORE-01 ;
+    brick:hasUnit unit:PERCENT_RH .
